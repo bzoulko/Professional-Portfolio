@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal/Profesional Portfolio Website</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <script src="https://kit.fontawesome.com/c78706af01.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ******* MAIN Section ******* -->
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <div class="logo">
+                    <!-- <p><b class="logo-init">Brian </b>Zoulko</p> -->
+                    <p class="logo-dev">Applications Programmer</p>
+                </div>
+                <ul id="sidemenu">
+                    <i class="fas fa-times close-menu" onclick="closeMenu()" title="Close Menu"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+                <a class="open-menu"><i class="fas fa-bars" onclick="showMenu()" title="Show Menu"></i></a>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer / Web Developer</p>
+                <h1><span>Brian Zoulko</span></h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ******* ABOUT Section ******* -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./images/BriansWorking.gif">
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am computer programmer with skills from many different operating
+                        system enviornments. I have a vast knowledge of programming languages
+                        and expertise in several different software tools along with operating
+                        systems. For 18 years I worked in the IBM mainframe enviornment and
+                        for the last 10 years I've been working in Unix, Linix and PC
+                        enviorments. Mostly building GUI applications and working with several
+                        different database structures to impove company in-house performance.
+                        All of which led me to getting certified in Full-Stack web development.
+                        Where I can now building structured "front-end" HTML web pages with fully
+                        functional "back-end" databases.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web/App interfaces</li>
+                            <li><span>PC Development</span><br>Software Applications: Unix/Linux/Windows</li>
+                            <li><span>Web Development</span><br>Full Stack Developer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Desaign Traning at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Degitial Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Desaign Traning at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ******* SERVICES Section ******* -->
+    <!-- <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I'm a full stack web developer</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I'm a full stack web developer</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Developer</h2>
+                    <p>I'm a full stack web developer</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- ******* WORK Section ******* -->
+    <div id="portfolio">
+        <div class="container">
+
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="./images/PasswordGenerator.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Password Generator App</h3>
+                        <p>
+                            This app will generate a password from 8-128
+                            characters based on special characters choosen
+                            when it is built.
+                        </p>
+                        <a rel="noreferrer" href="https://bzoulko.github.io/module3_challenge/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/NoteTaker.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Note Taker App</h3>
+                        <p>
+                            This app is a full stack program that uses online
+                            storage with features to write, save and delete notes.
+                        </p>
+                        <a rel="noreferrer" href="https://vast-shore-80072.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/WeatherDashboard.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Weather Dashboard App</h3>
+                        <p>
+                            This app is a full stack program that uses online
+                            storage and one-call-api to retrieve weather detail
+                            as well as the 5 day forecast. Saving each city search
+                            for quick access when needed.
+                        </p>
+                        <a rel="noreferrer" href="https://bzoulko.github.io/module6_challenge/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a rel="noreferrer" href="https://github.com/bzoulko" target="_blank" class="btn">See more</a>
+
+        </div>
+    </div>
+
+
+    <!-- ******* CONTACT Section ******* -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="mailto:bzoulko@gmail.com" title="Email"><i class="fas fa-paper-plane"></i>&#160;bzoulko@gmail.com</a><br>
+                        <a href="Tel: 1-909-835-8703" title="Telephone"><i class="fas fa-phone-square-alt"></i>&#160;1 (909) 835-8703</a><br>
+                        <a rel="noreferrer" href="https://github.com/bzoulko" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i>&#160;GitHub</a><br>
+                        <a rel="noreferrer" href="https://www.linkedin.com/in/brian-zoulko-753810240/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i>&#160;LinkedIn</a><br>
+                    </div>
+                    <!-- <a href="./images/brianzoulkoFull.jpg" download class="btn ext-btn">Download Resume</a> -->
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input class="inputField" type="text" name="Name" placeholder="Your Name" required>
+                        <input class="inputField" type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea class="inputField" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn ext-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ******* RESUME Section ******* -->
+    <div id="resume">
+        <div class="container">
+            <img src="./images/BriansResume.png" alt="resume">
+        </div>
+    </div>
+
+
+    <!-- ******* FOOTER Section ******* -->    
+    <div class="endorsement">
+        <!-- <p class="endorsement-left">Software Developer</p>
+        <p class="endorsement-center"><a class="endorsement-name">&#160;Brian Zoulko&#160;</a></p>
+        <p class="endorsement-right">Web Developer</p> -->
+        <p class="endorsement-left"></p>
+        <p class="endorsement-center"><a class="endorsement-name">&#160;&#160;</a></p>
+        <p class="endorsement-right"></p>
+    </div>
+
+</body>
+
+<script src="./assests/js/index.js"></script>
+
+</html>

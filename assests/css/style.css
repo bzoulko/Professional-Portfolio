@@ -27,6 +27,11 @@ body {
     background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
+
+/* ********************************** */
+/*            H E A D E R             */
+/* ********************************** */
+
 #header {
     width: 100%;
     height: 100vh;
@@ -124,7 +129,9 @@ nav ul li a:hover::after {
 /*             A B O U T              */
 /* ********************************** */
 #about {
-    padding: 80px 0px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vh;
     color: var(--lightgrey);
 }
 
@@ -257,7 +264,12 @@ nav ul li a:hover::after {
 /*                WORK                */
 /* ********************************** */
 #portfolio {
+    width: 100%;
+    height: 100vh;
     padding: 30px 0px;
+    margin-top: 70vh;
+    /* display: inline;
+    display: inline-block; */
 }
 
 .work-list {
@@ -349,7 +361,10 @@ nav ul li a:hover::after {
 /*              CONTACT               */
 /* ********************************** */
 #contact {
+    width: 100%;
+    height: 100vh;
     padding: 30px 0px;
+    margin-top: 40vh;
 }
 
 .contact-left {
@@ -437,57 +452,77 @@ form .btn {
 /*               RESUME               */
 /* ********************************** */
 #resume {
-    /* flex-basis: 35%; */
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    flex-basis: 35%;
+    margin-top: 10vh;
+    /* display: flex;
+    justify-content:space-between;
+    flex-basis: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding: 10px 10%; */
 }
 
-#resume img {
-    width: auto;
-    height: auto;
+#resume iframe {
+    width: 79vw;
+    height: 100vh;    
     margin-bottom: 40px;
+    border-width: 0px;
+    border-radius: 15px;
     box-shadow: inset 0px 0px 8px var(--black), 0 0 18px var(--blue);
 }
+
+/* .message
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.message .error
+{
+    border: 1px solid red;
+    padding: 2px;
+    white-space: nowrap;
+
+    display: inline;
+    display: inline-block;
+} */
 
 
 /* ********************************** */
 /*               FOOTER               */
 /* ********************************** */
-.endorsement {
+.footer {
     display: flex;
     width: 100%;
     height: auto;
-    /* padding: 8px 0px; */
-    /* margin-top: 20px; */
+    font-size: 12px;
     font-style: italic;
     font-weight: 300;
     background-image: linear-gradient(to bottom, var(--paleblue), var(--black), var(--darkgrey));
-    /* height: 50px; */
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-
 }
 
-.endorsement-left {
+.footer-left {
     margin-left: 20px;
 }
 
-/* .endorsement-center {
-} */
-
-.endorsement-right {
+.footer-right {
     margin-right: 20px;
 }
 
-.endorsement-left, .endorsement-right {
+.footer-left, .footer-right {
     margin-top: 5px;
     color: var(--paleyellow);
 }
 
-.endorsement-name {
-    color: var(--blue);
-    font-size: 32px;
+.footer-name {
+    color: var(--white);
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -509,37 +544,10 @@ nav .fas {
 /* ********************************** */
 
 /* Mobile Phones */
-@media only screen and (max-width: 1300px) { 
-
-
-}
-
-/* Mobile Phones */
 @media only screen and (max-width: 1160px) { 
 
     .sub-title {
         font-size: 50px;   
-    }
-
-}
-
-/* Mobile Phones */
-@media only screen and (max-width: 1030px) { 
-
-    .header-text h1 {
-        font-size: 90px;
-    }
-
-}
-
-@media only screen and (max-width: 1000px) { 
-
-    .header-text {
-        font-size: 15px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
     }
 
     nav .fas {
@@ -611,13 +619,27 @@ nav .fas {
         flex-basis: 100%
     }
 
-    .endorsement {
-        font-size: 14px;
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 1030px) { 
+
+    .header-text h1 {
+        font-size: 90px;
     }
 
-    .endorsement-name {
-        font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) { 
+
+    .header-text {
+        font-size: 15px;
     }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
 
 }
 

@@ -560,9 +560,9 @@ nav .fas {
 /* Mobile Phones */
 @media only screen and (max-width: 1160px) { 
 
-    /* #header {
-        background-size: 90vw;
-    } */
+    #header {
+        background-size: 180px;
+    } 
 
     .sub-title {
         font-size: 50px;   

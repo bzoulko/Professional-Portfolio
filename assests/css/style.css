@@ -24,7 +24,7 @@ html {
 body {
     color: var(--white);
     background-color: var(--black);
-    background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
+    background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black)); */
 }
 
 
@@ -696,7 +696,7 @@ nav .fas {
 @media only screen and (max-width: 300px) { 
 
     body {
-        background-image: linear-gradient(to right, var(--black));
+        /* background-image: linear-gradient(to right, var(--black)); */
     }
     
     .header-text {

@@ -124,7 +124,8 @@ nav ul li a:hover::after {
     border-width: 2px;
     border-radius: 8px;
     box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--paleblue);
-    backdrop-filter: blur(80%);
+    background-color: var(--paleblue);
+    /* backdrop-filter: blur(80%); */
     padding: 5px 5px;
 }
 
@@ -570,7 +571,8 @@ nav .fas {
     }
     
     nav ul {
-        background-color: transparent;
+        /* background-color: transparent; */
+        background-color: var(--paleblue); 
         position: fixed;
         top: 0px;
         right: -200px;

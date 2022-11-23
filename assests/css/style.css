@@ -24,7 +24,7 @@ html {
 body {
     color: var(--white);
     background-color: var(--black);
-    background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black)); */
+    background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
 
@@ -499,7 +499,7 @@ form .btn {
     padding: 10px 10%; */
 }
 
-#resume iframe {
+#resume, iframe {
     width: 79vw;
     height: 100vh;    
     margin-bottom: 40px;
@@ -508,21 +508,6 @@ form .btn {
     box-shadow: inset 0px 0px 8px var(--black), 0 0 18px var(--blue);
 }
 
-/* .message
-{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.message .error
-{
-    border: 1px solid red;
-    padding: 2px;
-    white-space: nowrap;
-
-    display: inline;
-    display: inline-block;
-} */
 
 
 /* ********************************** */
@@ -657,39 +642,39 @@ nav .fas {
 }
 
 /* Mobile Phones */
-@media only screen and (max-width: 1030px) { 
+/* @media only screen and (max-width: 1030px) { 
 
     .header-text h1 {
-        /* font-size: 90px; */
+        font-size: 90px;
     }
 
-}
+} */
 
-@media only screen and (max-width: 1000px) { 
+/* @media only screen and (max-width: 1000px) { 
 
     .header-text {
-        /* font-size: 15px; */
+        font-size: 15px;
     }
 
     .header-text h1 {
-        /* font-size: 30px; */
+        font-size: 30px;
     }
 
 
-}
+} */
 
 /* Mobile Phones */
-@media only screen and (max-width: 912px) { 
+/* @media only screen and (max-width: 912px) { 
 
     .header-text {
-        /* font-size: 15px; */
+        font-size: 15px;
     }
 
     .header-text h1 {
-        /* font-size: 30px; */
+        font-size: 30px;
     }
 
-}
+} */
 
 /* Mobile Phones */
 @media only screen and (max-width: 415px) { 
@@ -701,18 +686,18 @@ nav .fas {
 }
 
 /* Mobile Phones */
-@media only screen and (max-width: 300px) { 
+/* @media only screen and (max-width: 300px) { 
 
     body {
-        /* background-image: linear-gradient(to right, var(--black)); */
+        background-image: linear-gradient(to right, var(--black));
     }
     
     .header-text {
-        /* font-size: 11px; */
+        font-size: 11px;
     }
 
     .header-text h1 {
-        /* font-size: 22px; */
+        font-size: 22px;
     }
 
-}
+} */

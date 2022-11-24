@@ -564,7 +564,7 @@ nav .fas {
     } 
 
     .header-text {
-        margin-top: 59vh;
+        margin-top: 60vh;
         width: 90vw;
         justify-content: left;
         font-size: 3vh;
@@ -588,3 +588,35 @@ nav .fas {
     
 }
 
+/* Mobile Phones Side Ways */
+@media only screen and (max-height: 280px) { 
+
+    #header {
+        background-size: 130px;
+        background-position-y: 19vh;
+    } 
+
+    .header-text {
+        margin-top: 59vh;
+        margin-left: 20vw;
+        width: 60vw;
+        font-size: 3vh;
+        text-align: center;
+        border-color: var(--paleblue);
+        border-width: 2px;
+        border-radius: 8px;
+        box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--paleblue);
+        background-color: var(--paleblue);
+        /* backdrop-filter: blur(80%); */
+        padding: 5px 5px;
+    }
+    
+    .header-text h1 {
+        font-size: 6vh;
+    }
+
+    .logo-init {
+        color: var(--white);
+    }
+    
+}

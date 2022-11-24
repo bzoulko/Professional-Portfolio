@@ -38,31 +38,9 @@ body {
     background-image: url("../../images/ImageWithNoBkgrnd.png");
     background-attachment: fixed;
     background-position-y:bottom;
-    background-position-x: right;
+    background-position-x: left;
     background-repeat: no-repeat;
     background-size: 360px;
-
-    /* width: 100%;
-    height: 100vh;
-    background-image: url("../../images/BrianWithNoBkgrndFull.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position-y: top;
-    background-position-x: right; */
-
-    /* left: 0px;
-    top: 0px;    
-    width: 100%;
-    height: 100vh;
-    display: block;
-    overflow: hidden;
-    background-image: url("../../images/BrianWithNoBkgrndFull.png");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    background-position-y: top;
-    background-position-x: right; */
 }
 
 .container {
@@ -238,54 +216,6 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block
 }
-
-
-/* ********************************** */
-/*          S E R V I C E S           */
-/* ********************************** */
-/* #services {
-    padding: 30px 0px;
-}
-
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div {
-    background-color: var(--darkgrey);
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-
-.services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover {
-    background-color: var(--blue);
-    transform: translateY(-10px);
-} */
 
 
 /* ********************************** */
@@ -485,13 +415,6 @@ form .btn {
     height: 120vh;
     margin-top: 10vh;
     justify-content: center;
-    /* display: flex;
-    justify-content:space-between;
-    flex-basis: 50%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding: 10px 10%; */
 }
 
 #resume iframe {
@@ -612,6 +535,34 @@ nav .fas {
         top: 25px;
         right: 25px;
     }
+
+    .header-text {
+        /* margin-top: 75vh; */
+        margin-top: 30px;
+        margin-bottom: 0px;
+        width: 70vw;
+        justify-content: left;
+        font-size: 3vh;
+        text-align: center;
+        border-color: var(--paleblue);
+        border-width: 2px;
+        border-radius: 8px;
+        box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--paleblue);
+        background-color: var(--paleblue);
+        background-position-x: left;
+        background-position-y: bottom;
+        /* backdrop-filter: blur(80%); */
+        padding: 5px 5px;
+    }
+    
+    .header-text h1 {
+        font-size: 6vh;
+    }
+    
+    .header-text h1 span {
+        color: var(--blue);
+    }
+        
 
     .sub-title {
         font-size: 40px;   

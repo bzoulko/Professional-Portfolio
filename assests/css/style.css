@@ -33,8 +33,9 @@ body {
 /* ********************************** */
 
 #header {
-    width: 100%; 
-    height: 100vh;    
+    display: inline-flex;
+    width: 100vw;
+    height: 100vh;
     background-image: url("../../images/ImageWithNoBkgrnd.png");
     background-position-y: bottom;
     background-position-x: left;
@@ -131,7 +132,8 @@ nav ul li a:hover::after {
 /*             A B O U T              */
 /* ********************************** */
 #about {
-    width: 100%;
+    display: inline-flex;
+    width: 100vw;
     height: 100vh;
     margin-top: 10vh;
     color: var(--lightgrey);
@@ -218,7 +220,8 @@ nav ul li a:hover::after {
 /*                WORK                */
 /* ********************************** */
 #portfolio {
-    width: 100%;
+    display: flexbox;
+    width: 100vw;
     height: 100vh;
     padding: 30px 0px;
     margin-top: 70vh;
@@ -315,7 +318,8 @@ nav ul li a:hover::after {
 /*              CONTACT               */
 /* ********************************** */
 #contact {
-    width: 100%;
+    display: inline-flex;
+    width: 100vw;
     height: 100vh;
     padding: 30px 0px;
     margin-top: 40vh;
@@ -406,9 +410,9 @@ form .btn {
 /*               RESUME               */
 /* ********************************** */
 #resume {
-    display: flex;
-    width: 100%;
-    height: 120vh;
+    display: inline-flex;
+    width: 100vw;
+    height: 100vh;
     margin-top: 10vh;
     justify-content: center;
 }
@@ -615,8 +619,23 @@ nav .fas {
         font-size: 6vh;
     }
 
+    nav ul li {
+        margin: 10px 20px;    
+    }
+    
     .logo-init {
         color: var(--white);
     }
     
+    #portfolio {
+        margin-top: 145vh;
+    }
+
+    #contact {
+        margin-top: 145vh;
+    }
+
+    #resume {
+        margin-top: 170vh;
+    }
 }

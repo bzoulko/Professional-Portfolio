@@ -477,7 +477,7 @@ nav .fas {
 /*         CSS Small Screens          */
 /* ********************************** */
 
-/* Mobile Phones */
+/* Tablets */
 @media only screen and (max-width: 1160px) { 
 
     .sub-title {
@@ -556,34 +556,32 @@ nav .fas {
 
 }
 
-/* Mobile Phones */
-@media only screen and (max-width: 980px) { 
+/* Mobile Phones 358 x 714*/
+@media only screen and (max-width: 380px) { 
 
     #header {
-        background-size: 230px;
-        background-position-y: 50vh;
+        background-size: 210px;
+        background-position-y: 24vh;
     } 
 
-}
-
-
-/* Mobile Phones */
-@media only screen and (max-height: 700px) { 
-
-    #header {
-        background-size: 180px;
-        background-position-y: 40vh;
-    } 
-
-}
-
-/* Mobile Phones */
-@media only screen and (max-width: 415px) { 
-
-    #header {
-        background-size: 120px;
-        background-position-y: 30vh;
-    } 
+    .header-text {
+        margin-top: 55vh;
+        width: 90vw;
+        justify-content: left;
+        font-size: 3vh;
+        text-align: center;
+        border-color: var(--paleblue);
+        border-width: 2px;
+        border-radius: 8px;
+        box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--paleblue);
+        background-color: var(--paleblue);
+        /* backdrop-filter: blur(80%); */
+        padding: 5px 5px;
+    }
+    
+    .header-text h1 {
+        font-size: 6vh;
+    }
 
     .logo-init {
         color: var(--white);

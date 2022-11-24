@@ -557,11 +557,21 @@ nav .fas {
 }
 
 /* Mobile Phones */
+@media only screen and (max-width: 980px) { 
+
+    #header {
+        background-size: 230px;
+        background-position-y: 50vh;
+    } 
+
+}
+
+
+/* Mobile Phones */
 @media only screen and (max-height: 700px) { 
 
     #header {
         background-size: 180px;
-        background-position-x: left;
         background-position-y: 40vh;
     } 
 
@@ -571,9 +581,8 @@ nav .fas {
 @media only screen and (max-width: 415px) { 
 
     #header {
-        background-size: 180px;
-        background-position-x: left;
-        background-position-y: 40vh;
+        background-size: 120px;
+        background-position-y: 30vh;
     } 
 
     .logo-init {

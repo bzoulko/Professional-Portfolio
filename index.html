@@ -27,13 +27,89 @@
                 <ul id="sidemenu">
                     <i class="fas fa-times close-menu" onclick="closeMenu()" title="Close Menu"></i>
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about" onclick="page('about-page')" title="About" >About</a></li>
                     <!-- <li><a href="#services">Services</a></li> -->
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#resume">Resume</a></li>
                 </ul>
-                <a class="open-menu"><i class="fas fa-bars" onclick="showMenu()" title="Show Menu"></i></a>
+                <a class="open-menu"><i class="fas fa-bars" onclick="closeMenu()" title="Show Menu"></i></a>
+                
+                <div id="about-page">
+                    <!-- ***************************** -->
+                    <!-- *        ABOUT Section      * -->
+                    <!-- ***************************** -->
+                    <div id="about">
+                        <div class="container">
+                            <div class="row">
+                
+                                <div class="about-col-1">
+                                    <img src="./images/BriansWorking.gif">
+                                </div>
+                
+                                <div class="about-col-2">
+                
+                                    <h1 class="sub-title">About Me</h1>
+                                    <p>
+                                        I am a computer programmer with skills from many different operating
+                                        systems. I have a vast knowledge of programming languages,
+                                        software development tools, and O/S environments. For 18
+                                        years I worked in the IBM mainframe setting and for the last 10 years
+                                        I've been working in Unix, Linix and PC environments. Mostly building
+                                        GUI applications and working with several different database structures
+                                        to impove company in-house performance. All of which led me to getting
+                                        certified in Full-Stack web development. Where I can now build structured
+                                        "front-end" HTML web pages with fully functional "back-end" databases.
+                                    </p>
+                
+                                    <div class="tab-titles">
+                                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                                    </div>
+                
+                                    <div class="tab-contents active-tab" id="skills">
+                                        <ul>
+                                            <li><span>Mainframe</span><br>Applications Programmer on: IBM 3600, ES9000, and AS400</li>
+                                            <li><span>PC Applications Developer</span><br>Developed Software Applications on: Unix,
+                                                Linux, and Windows Operating Systems</li>
+                                            <li><span>Full Stack Developer</span><br>Font-End Web Developer and Back-End Database
+                                                Developer</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="tab-contents" id="experience">
+                                        <ul>
+                                            <li><span>Jan. 2000 - Oct. 2022: <a style="color: var(--white)"> Software Developer /
+                                                        Mainframe Programmer</a></span><br>Starcrest Products of California</li>
+                                            <li><span>Dec. 1998 - Jan. 2000: <a style="color: var(--white)"> Computer
+                                                        Programmer</a></span><br>ISD Corp.</li>
+                                            <li><span>Oct. 1994 - Dec. 1998: <a style="color: var(--white)"> Mainframe
+                                                        Programmer</a></span><br>Starcrest Products of California</li>
+                                            <li><span>Sept. 1993 - Oct. 1994: <a style="color: var(--white)"> Customer Support /
+                                                        Programmer</a></span><br>Inland Cash Register</li>
+                                        </ul>
+                                    </div>
+                
+                                    <div class="tab-contents" id="education">
+                                        <ul>
+                                            <li><span>Aug. 2022 - Nov. 2022: <a style="color: var(--white)"> Certified as Web
+                                                        Developer</a></span><br>UCSD Extended Studies Bootcamp</li>
+                                            <li><span>Mar. 1999 - May. 1999: <a style="color: var(--white)"> VB6 & Advanced VB6, Object
+                                                        Oriented Programming</a></span><br>UCR Extension Center - University of
+                                                California, Riverside</li>
+                                            <li><span>Oct. 1993 - Apr. 1994: <a style="color: var(--white)"> Certified as Computer
+                                                        Programmer</a></span><br>CLC - Computer Learning Center</li>
+                                            <li><span>Aug. 1991 - Oct. 1993<a style="color: var(--white)"></a></span><br>RCC - Riverside
+                                                Community College</li>
+                                        </ul>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
 
             <div class="header-text">
@@ -45,79 +121,6 @@
 
 
 
-    <!-- ***************************** -->
-    <!-- *        ABOUT Section      * -->
-    <!-- ***************************** -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="about-col-1">
-                    <img src="./images/BriansWorking.gif">
-                </div>
-
-                <div class="about-col-2">
-
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        I am a computer programmer with skills from many different operating
-                        systems. I have a vast knowledge of programming languages,
-                        software development tools, and O/S environments. For 18
-                        years I worked in the IBM mainframe setting and for the last 10 years
-                        I've been working in Unix, Linix and PC environments. Mostly building
-                        GUI applications and working with several different database structures
-                        to impove company in-house performance. All of which led me to getting
-                        certified in Full-Stack web development. Where I can now build structured
-                        "front-end" HTML web pages with fully functional "back-end" databases.
-                    </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Mainframe</span><br>Applications Programmer on: IBM 3600, ES9000, and AS400</li>
-                            <li><span>PC Applications Developer</span><br>Developed Software Applications on: Unix,
-                                Linux, and Windows Operating Systems</li>
-                            <li><span>Full Stack Developer</span><br>Font-End Web Developer and Back-End Database
-                                Developer</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Jan. 2000 - Oct. 2022: <a style="color: var(--white)"> Software Developer /
-                                        Mainframe Programmer</a></span><br>Starcrest Products of California</li>
-                            <li><span>Dec. 1998 - Jan. 2000: <a style="color: var(--white)"> Computer
-                                        Programmer</a></span><br>ISD Corp.</li>
-                            <li><span>Oct. 1994 - Dec. 1998: <a style="color: var(--white)"> Mainframe
-                                        Programmer</a></span><br>Starcrest Products of California</li>
-                            <li><span>Sept. 1993 - Oct. 1994: <a style="color: var(--white)"> Customer Support /
-                                        Programmer</a></span><br>Inland Cash Register</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Aug. 2022 - Nov. 2022: <a style="color: var(--white)"> Certified as Web
-                                        Developer</a></span><br>UCSD Extended Studies Bootcamp</li>
-                            <li><span>Mar. 1999 - May. 1999: <a style="color: var(--white)"> VB6 & Advanced VB6, Object
-                                        Oriented Programming</a></span><br>UCR Extension Center - University of
-                                California, Riverside</li>
-                            <li><span>Oct. 1993 - Apr. 1994: <a style="color: var(--white)"> Certified as Computer
-                                        Programmer</a></span><br>CLC - Computer Learning Center</li>
-                            <li><span>Aug. 1991 - Oct. 1993<a style="color: var(--white)"></a></span><br>RCC - Riverside
-                                Community College</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 

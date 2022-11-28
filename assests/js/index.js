@@ -1,6 +1,5 @@
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
-
 function openTab(tabName) {
     for (tabLink of tabLinks) {
         tabLink.classList.remove("active-link");
@@ -17,16 +16,31 @@ function openTab(tabName) {
 
 
 var sideMenu = document.getElementById("sidemenu");
-
 function showMenu() {
     sideMenu.style.right = "0px";
     // sideMenu.style.backdropFilter = "blur(20px)";
 }
-
 function closeMenu() {
     sideMenu.style.right = "-200px";
     // sideMenu.style.backdropFilter = "blur(0px)";
 }
+
+
+
+function page(tagName) {
+    
+    let page = document.getElementById(tagName);
+    console.log("tagname: ", tagName);
+    console.log("page.style.display: ", page.style.display);
+
+    if (page.style.display === "none" || page.style.display === "") {
+      page.style.display = "block";
+    } else {
+      page.style.display = "none";
+    }      
+}
+
+
 
 // function isMobile() {
 //     var check = false;

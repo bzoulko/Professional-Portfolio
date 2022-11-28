@@ -27,6 +27,9 @@ body {
     background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
+.about-page {
+    display: none;
+}
 
 /* ********************************** */
 /*            H E A D E R             */

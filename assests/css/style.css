@@ -549,8 +549,14 @@ nav .fas {
         font-size: 40px;   
     }
 
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
+    .about-col-1, .about-col-2  {
+        flex-basis: 65%;
+    }
+
+    .about-col-1 img {
+        width: 65%;
+        border-radius: 15px;
+        box-shadow: inset 0px 0px 8px var(--black), 0 0 95px var(--blue);
     }
 
     .about-col-1 {
@@ -595,10 +601,6 @@ nav .fas {
         padding: 5px 5px;
     }
     
-    .header-text h1 {
-        font-size: 6vh;
-    }
-
     .logo-init {
         color: var(--white);
     }
@@ -628,10 +630,6 @@ nav .fas {
         padding: 5px 5px;
     }
     
-    .header-text h1 {
-        font-size: 6vh;
-    }
-
     nav ul li {
         margin: 10px 20px;    
     }

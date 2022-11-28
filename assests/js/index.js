@@ -1,5 +1,6 @@
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
+
 function openTab(tabName) {
     for (tabLink of tabLinks) {
         tabLink.classList.remove("active-link");
@@ -26,18 +27,34 @@ function closeMenu() {
 }
 
 
-
-function page(tagName) {
+// Show the passed Id elements and all
+// others to prevent viewing.
+function page(Id) {
     
-    let page = document.getElementById(tagName);
-    console.log("tagname: ", tagName);
-    console.log("page.style.display: ", page.style.display);
+    const nav = 'nav-bar';
+    const Ids = ['header','about','portfolio','contact','resume'];
+    let navPage = document.getElementById(nav);
 
-    if (page.style.display === "none" || page.style.display === "") {
-      page.style.display = "block";
-    } else {
-      page.style.display = "none";
-    }      
+    Ids.forEach(tagId => {
+
+        let page = document.getElementById(tagId);
+        console.log("page.style.display: ", page.style.display);
+    
+        if (Id === tagId) {
+            page.style.display = "block";
+            if (Id === "header") {
+                navPage.style.height = "100vh";
+                navPage.style.backgroundSize = "360px";
+            } else {
+                navPage.style.height = "10vh";
+                navPage.style.backgroundSize = "0px";
+            }
+        } else {
+            page.style.display = "none";
+        }
+
+    });
+
 }
 
 

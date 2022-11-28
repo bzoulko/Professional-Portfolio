@@ -27,16 +27,16 @@ body {
     background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
-.about-page {
-    display: none;
+#nav-bar {
+    display: block;
 }
 
 /* ********************************** */
 /*            H E A D E R             */
 /* ********************************** */
 
-#header {
-    display: inline-flex;
+#nav-bar {
+    display: block;
     width: 100vw;
     height: 100vh;
     background-image: url("../../images/ImageWithNoBkgrnd.png");
@@ -71,10 +71,17 @@ nav {
 
 .logo-dev {
     color: var(--lightgrey);
+    height: 26px;
     width: 300px;    
     font-size: 1rem;
     font-weight: 300;
     margin-top: 5px;
+    text-align: center;
+    border-color: var(--paleblue);
+    border-width: 2px;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--lightgrey);
+    background-color: var(--paleblue);
 }
 
 nav ul li {
@@ -135,10 +142,10 @@ nav ul li a:hover::after {
 /*             A B O U T              */
 /* ********************************** */
 #about {
-    display: inline-flex;
+    display: none;
     width: 100vw;
     height: 100vh;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     color: var(--lightgrey);
 }
 
@@ -223,11 +230,12 @@ nav ul li a:hover::after {
 /*                WORK                */
 /* ********************************** */
 #portfolio {
-    display: flexbox;
+    /* display: flexbox; */
+    display: none;
     width: 100vw;
     height: 100vh;
     padding: 30px 0px;
-    margin-top: 70vh;
+    /* margin-top: 70vh; */
     /* display: inline;
     display: inline-block; */
 }
@@ -321,11 +329,12 @@ nav ul li a:hover::after {
 /*              CONTACT               */
 /* ********************************** */
 #contact {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: none;
     width: 100vw;
     height: 100vh;
     padding: 30px 0px;
-    margin-top: 40vh;
+    /* margin-top: 40vh; */
 }
 
 .contact-left {
@@ -413,10 +422,11 @@ form .btn {
 /*               RESUME               */
 /* ********************************** */
 #resume {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: none;
     width: 100vw;
     height: 100vh;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     justify-content: center;
 }
 

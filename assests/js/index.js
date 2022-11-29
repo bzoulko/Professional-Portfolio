@@ -2,7 +2,10 @@
 var hBackgroundSize = 0;
 var tabLinks        = document.getElementsByClassName("tab-links");
 var tabContents     = document.getElementsByClassName("tab-contents");
+// var openMenu        = document.getElementsByClassName("open-menu");
+// var closeMenu       = document.getElementsByClassName("close-menu");
 var sideMenu        = document.getElementById("sidemenu");
+// var navBar          = document.getElementById("nav-bar");
 
 
 /**
@@ -28,18 +31,32 @@ function openTab(tabName) {
 
 
 /**
- * Show Menu() - Display Navigation Bar.
+ * Close Menu() - Hide Navigation Bar.
  */
-function showMenu() {
+function closeMenu() {
     sideMenu.style.right = "-200px";
+
+    // Apply animation to all DIV's.
+    console.log("Apply animation!");
+
+    // Remove menu controls to class list.
+    // openMenu.classList.remove("fa-times");
+    // closeMenu.classList.remove("fa-bars");    
 }
 
 
 /**
- * Close Menu() - Hide Navigation Bar.
+ * Show Menu() - Display Navigation Bar.
  */
-function closeMenu() {
+function showMenu() {
     sideMenu.style.right = "0px";
+
+    // Remove animation from all DIV's.
+    console.log("Remove animation!");
+
+    // Add menu controls from class list.
+    // openMenu.classList.add("fa-times");
+    // closeMenu.classList.add("fa-bars");
 }
 
 

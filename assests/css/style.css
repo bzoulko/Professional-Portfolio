@@ -29,11 +29,11 @@ body {
     background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
-.fas-times {
+/* .fa-times {
     border-color: var(--white);
     border-width: 2px;
     border-radius: 4px;
-}
+} */
 
 /* ********************************** */
 /*            H E A D E R             */
@@ -53,11 +53,7 @@ body {
 }
 
 .container {
-    /* padding: 10px 4%; */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding: 10px 4%;
 }
 
 nav {
@@ -94,10 +90,6 @@ nav {
     border-radius: 4px;
     box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--lightgrey);
     background-color: var(--paleblue);
-}
-
-nav .fas {
-    padding: 20px 20px;
 }
 
 nav ul li {
@@ -467,10 +459,10 @@ form .btn {
     font-size: 12px;
     font-style: italic;
     font-weight: 300;
-    background-image: linear-gradient(to bottom, var(--paleblue), var(--black), var(--darkgrey));
     position: fixed;
     bottom: 0;
     justify-content: space-between;
+    background-image: linear-gradient(to bottom, var(--paleblue), var(--black), var(--darkgrey));
 }
 
 .footer-left {
@@ -492,6 +484,16 @@ form .btn {
     font-weight: 500;
 }
 
+
+
+/* ********************************** */
+/*          Navigation Icons          */
+/* ********************************** */
+/* Show/Hide Open and Close Bars. */
+nav .fas {
+    display: none;
+    padding: 20px 20px;
+}
 
 
 
@@ -535,6 +537,21 @@ form .btn {
         right: 25px;
     }
     
+    .close-menu {
+        border-width: 2px;
+        border-color: var(--darkgrey);
+        border-radius: 6px;
+    }
+
+    .open-menu {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        border-width: 2px;
+        border-color: var(--darkgrey);
+        border-radius: 6px;
+    }
+
     .sub-title {
         font-size: 40px;   
     }
@@ -569,7 +586,7 @@ form .btn {
 }
 
 /* Mobile Phones 358 x 714*/
-/* @media only screen and (max-width: 380px) { 
+@media only screen and (max-width: 380px) { 
 
     #header {
         background-size: 225px;
@@ -594,10 +611,10 @@ form .btn {
         color: var(--white);
     }
     
-} */
+}
 
 /* Mobile Phones Side Ways */
-/* @media only screen and (max-height: 280px) { 
+@media only screen and (max-height: 280px) { 
 
     #header {
         background-size: 130px;
@@ -637,4 +654,4 @@ form .btn {
     #resume {
         margin-top: 170vh;
     }
-} */
+}

@@ -47,13 +47,17 @@ body {
     background-position-y: bottom;
     background-position-x: left;
     background-repeat: no-repeat;
-    background-size: 360px;
+    background-size: 50vh;
     animation: fadeIn;
     animation-duration: 2s;
 }
 
 .container {
-    padding: 10px 4%;
+    /* padding: 10px 4%; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 nav {
@@ -529,10 +533,10 @@ nav .fas {
         margin: 25px;        
     }
 
-    #header {
+    /* #header {
         background-size: 80%;
-        /* background-position-y: 25vh; */
-    } 
+        background-position-y: 25vh; 
+    }  */
 
     .close-menu {
         border-width: 2px;

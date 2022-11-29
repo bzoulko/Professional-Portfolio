@@ -29,9 +29,6 @@ body {
     background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
-#nav-bar {
-    display: block;
-}
 
 /* ********************************** */
 /*            H E A D E R             */
@@ -436,7 +433,7 @@ form .btn {
 
 #resume iframe {
     width: 90vw;
-    height: 100vh;    
+    height: 100vh;
     margin-bottom: 40px;
     border-width: 0px;
     border-radius: 15px;
@@ -448,7 +445,7 @@ form .btn {
 /* ********************************** */
 /*               FOOTER               */
 /* ********************************** */
-.footer {
+#footer {
     display: flex;
     width: 100%;
     height: auto;
@@ -511,7 +508,6 @@ nav .fas {
     }
     
     nav ul {
-        /* background-color: transparent; */
         background-color: var(--paleblue); 
         position: fixed;
         top: 0px;
@@ -583,7 +579,7 @@ nav .fas {
 }
 
 /* Mobile Phones 358 x 714*/
-@media only screen and (max-width: 380px) { 
+/* @media only screen and (max-width: 380px) { 
 
     #header {
         background-size: 225px;
@@ -601,7 +597,6 @@ nav .fas {
         border-radius: 8px;
         box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--paleblue);
         background-color: var(--paleblue);
-        /* backdrop-filter: blur(80%); */
         padding: 5px 5px;
     }
     
@@ -609,10 +604,10 @@ nav .fas {
         color: var(--white);
     }
     
-}
+} */
 
 /* Mobile Phones Side Ways */
-@media only screen and (max-height: 280px) { 
+/* @media only screen and (max-height: 280px) { 
 
     #header {
         background-size: 130px;
@@ -630,7 +625,6 @@ nav .fas {
         border-radius: 8px;
         box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--paleblue);
         background-color: var(--paleblue);
-        /* backdrop-filter: blur(80%); */
         padding: 5px 5px;
     }
     
@@ -653,4 +647,4 @@ nav .fas {
     #resume {
         margin-top: 170vh;
     }
-}
+} */

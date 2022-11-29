@@ -1,28 +1,40 @@
-var tabLinks = document.getElementsByClassName("tab-links");
-var tabContents = document.getElementsByClassName("tab-contents");
+// Global Variables for javascript routines.
+var hBackgroundSize = 0;
+var tabLinks        = document.getElementsByClassName("tab-links");
+var tabContents     = document.getElementsByClassName("tab-contents");
+var sideMenu        = document.getElementById("sidemenu");
 
+
+/**
+ * About Skils, Experiance, and Education LINKs.
+ * @param {*} tabName 
+ */
 function openTab(tabName) {
+
+    // Remove active link tab from class list.
     for (tabLink of tabLinks) {
         tabLink.classList.remove("active-link");
     }
 
+    // Remove active tab from class list.
     for (tabContent of tabContents) {
         tabContent.classList.remove("active-tab");
     }
 
+    // Reset current target by adding active-link and active-tab back to the class list.
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabName).classList.add("active-tab");
 }
 
 
-
-var sideMenu = document.getElementById("sidemenu");
 /**
  * Show Menu() - Display Navigation Bar.
  */
- function showMenu() {
+function showMenu() {
     sideMenu.style.right = "-200px";
 }
+
+
 /**
  * Close Menu() - Hide Navigation Bar.
  */
@@ -31,9 +43,11 @@ function closeMenu() {
 }
 
 
-// Show the passed Id elements and all
-// others to prevent viewing.
-var hBackgroundSize = 0;
+/**
+ * Show the passed Id elements and all
+ * others to prevent viewing.
+ * @param {*} Id 
+ */
 function page(Id) {
     
     // All valid ID's for the html Page.

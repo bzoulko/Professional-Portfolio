@@ -29,6 +29,11 @@ body {
     background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
+.fas-times {
+    border-color: var(--white);
+    border-width: 2px;
+    border-radius: 4px;
+}
 
 /* ********************************** */
 /*            H E A D E R             */
@@ -58,7 +63,7 @@ nav {
 }
 
 .logo, .logo-init, .logo-dev {
-    width: 140px;
+    width: auto;
     font-size: 42px;
     font-weight: 600;
     font-style: italic;
@@ -426,7 +431,7 @@ form .btn {
     /* display: inline-flex; */
     display: none;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     /* margin-top: 10vh; */
     justify-content: center;
 }
@@ -523,6 +528,11 @@ nav .fas {
         display: block;
         margin: 25px;        
     }
+
+    #header {
+        background-size: 80%;
+        /* background-position-y: 25vh; */
+    } 
 
     .close-menu {
         border-width: 2px;

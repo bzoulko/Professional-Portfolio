@@ -8,6 +8,8 @@
     --lightgrey: #ababab;
     --darkgrey: #262626;
     --paleyellow: #eee88a;
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
 }
 
 * {
@@ -44,6 +46,8 @@ body {
     background-position-x: left;
     background-repeat: no-repeat;
     background-size: 360px;
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 
 .container {

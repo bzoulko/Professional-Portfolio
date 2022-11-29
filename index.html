@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Zoulko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./assests/css/style.css">
     <script src="https://kit.fontawesome.com/c78706af01.js" crossorigin="anonymous"></script>
 </head>
@@ -21,23 +22,25 @@
         <div class="container">
 
             <nav>
-                <div class="logo">
+                <div class="logo animate__animated animate__fadeInLeft">
                     <p class="logo-dev">Applications Programmer</p>
                 </div>
+
                 <ul id="sidemenu">
                     <i class="fas fa-times close-menu" onclick="closeMenu()" title="Close Menu"></i>
-                    <li><a href="#" onclick="page('header')">Home</a></li>
-                    <li><a href="#" onclick="page('about')">About</a></li>
+                    <li class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#" onclick="page('header')">Home</a></li>
+                    <li class="animate__animated animate__fadeInDown animate__delay-1s"><a href="#" onclick="page('about')">About</a></li>
                     <!-- <li><a href="#services">Services</a></li> -->
-                    <li><a href="#" onclick="page('portfolio')">Portfolio</a></li>
-                    <li><a href="#" onclick="page('contact')">Contact</a></li>
-                    <li><a href="#" onclick="page('resume')">Resume</a></li>
+                    <li class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#" onclick="page('portfolio')">Portfolio</a></li>
+                    <li class="animate__animated animate__fadeInDown animate__delay-1s"><a href="#" onclick="page('contact')">Contact</a></li>
+                    <li class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#" onclick="page('resume')">Resume</a></li>
                 </ul>
+
                 <a class="open-menu"><i class="fas fa-bars" onclick="showMenu()" title="Show Menu"></i></a>
 
             </nav>
 
-            <div id="header" class="header-text">
+            <div id="header" class="header-text animate__animated animate__fadeInRight">
                 <p>Software / Web Developer</p>
                 <h1><span>Brian Zoulko</span></h1>
             </div>
@@ -53,11 +56,11 @@
         <div class="container">
             <div class="row">
 
-                <div class="about-col-1">
+                <div class="about-col-1 animate__animated animate__fadeInLeft">
                     <img src="./images/BriansWorking.gif">
                 </div>
 
-                <div class="about-col-2">
+                <div class="about-col-2 animate__animated animate__fadeInRight">
 
                     <h1 class="sub-title">About Me</h1>
                     <p>
@@ -126,11 +129,11 @@
     <div id="portfolio">
         <div class="container">
 
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title animate__animated animate__fadeInDown">My Work</h1>
 
             <div class="work-list">
 
-                <div class="work">
+                <div class="work animate__animated animate__fadeInLeft">
                     <img src="./images/PasswordGenerator.png" alt="work-1">
                     <div class="layer">
                         <h3>Password Generator App</h3>
@@ -144,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work animate__animated animate__fadeInDown">
                     <img src="./images/NoteTaker.png" alt="work-2">
                     <div class="layer">
                         <h3>Note Taker App</h3>
@@ -157,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work animate__animated animate__fadeInRight">
                     <img src="./images/WeatherDashboard.png" alt="work-3">
                     <div class="layer">
                         <h3>Weather Dashboard App</h3>
@@ -186,7 +189,7 @@
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left animate__animated animate__fadeInLeft">
                     <h1 class="sub-title">Contact Me</h1>
                     <div class="social-icons">
                         <a href="mailto:bzoulko@gmail.com" title="Email"><i
@@ -200,7 +203,7 @@
                     </div>
                     <!-- <a href="./images/brianzoulkoFull.jpg" download class="btn ext-btn">Download Resume</a> -->
                 </div>
-                <div class="contact-right">
+                <div class="contact-right animate__animated animate__fadeInRight">
                     <form>
                         <input class="inputField" type="text" name="Name" placeholder="Your Name" required>
                         <input class="inputField" type="email" name="Email" id="" placeholder="Your Email" required>
@@ -219,7 +222,7 @@
     <!-- *       RESUME Section      * -->
     <!-- ***************************** -->
     <div id="resume">
-        <div class="container">
+        <div class="container animate__animated animate__fadeInUp">
             <iframe src="./images/BriansResumeFullStack.pdf#view=fit" frameborder="0"></iframe>
         </div>
     </div>

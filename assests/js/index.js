@@ -29,6 +29,7 @@ function closeMenu() {
 
 // Show the passed Id elements and all
 // others to prevent viewing.
+var hBackgroundSize = 0;
 function page(Id) {
     
     const nav = 'nav-bar';
@@ -38,17 +39,23 @@ function page(Id) {
     Ids.forEach(tagId => {
 
         let page = document.getElementById(tagId);
-        console.log("page.style.display: ", page.style.display);
-    
+
         if (Id === tagId) {
+
+            // Capture any change in value for the background image. But only if the change has value.
+            if (navPage.style.backgroundSize != "0px") hBackgroundSize = navPage.style.backgroundSize;
+            console.log("background image size:        ", hBackgroundSize);
+            console.log("navPage.style.backgroundSize: ", navPage.style.backgroundSize);
+
             page.style.display = "block";
             if (Id === "header") {
                 navPage.style.height = "100vh";
-                navPage.style.backgroundSize = "360px";
+                navPage.style.backgroundSize = hBackgroundSize;
             } else {
                 navPage.style.height = "10vh";
-                navPage.style.backgroundSize = "0px";
+                navPage.style.backgroundSize = "0px";                
             }
+
         } else {
             page.style.display = "none";
         }

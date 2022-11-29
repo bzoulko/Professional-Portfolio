@@ -17,13 +17,17 @@ function openTab(tabName) {
 
 
 var sideMenu = document.getElementById("sidemenu");
-function showMenu() {
-    sideMenu.style.right = "0px";
-    // sideMenu.style.backdropFilter = "blur(20px)";
-}
-function closeMenu() {
+/**
+ * Show Menu() - Display Navigation Bar.
+ */
+ function showMenu() {
     sideMenu.style.right = "-200px";
-    // sideMenu.style.backdropFilter = "blur(0px)";
+}
+/**
+ * Close Menu() - Hide Navigation Bar.
+ */
+function closeMenu() {
+    sideMenu.style.right = "0px";
 }
 
 
@@ -32,31 +36,39 @@ function closeMenu() {
 var hBackgroundSize = 0;
 function page(Id) {
     
+    // All valid ID's for the html Page.
     const nav = 'nav-bar';
     const Ids = ['header','about','portfolio','contact','resume'];
     let navPage = document.getElementById(nav);
 
+    // Loop through each ID and display the page selected via passing argument
+    // giving the html the look and feel of separate web pages.
     Ids.forEach(tagId => {
 
+        // Capture the ID section then apply the display view properties.
         let page = document.getElementById(tagId);
-
         if (Id === tagId) {
-
-            // Capture any change in value for the background image. But only if the change has value.
-            if (navPage.style.backgroundSize != "0px") hBackgroundSize = navPage.style.backgroundSize;
-            console.log("background image size:        ", hBackgroundSize);
-            console.log("navPage.style.backgroundSize: ", navPage.style.backgroundSize);
-
+            // show the section being viewed.
             page.style.display = "block";
+
+            // Only hold background size when it's not '0px' to ensure all screen sizes
+            // maintain the right size when applied.
+            if (navPage.style.backgroundSize != "0px") hBackgroundSize = navPage.style.backgroundSize;
+
+            // Maintain the position for the nav-bar and (show or hide) background image when
+            // (on or off) the home page.
             if (Id === "header") {
+                // Show the Home Page.
                 navPage.style.height = "100vh";
                 navPage.style.backgroundSize = hBackgroundSize;
             } else {
+                // Maintain nav-bar position and hide background image... Not on Home Page.
                 navPage.style.height = "10vh";
                 navPage.style.backgroundSize = "0px";                
             }
 
         } else {
+            // Hide the section not being viewed.
             page.style.display = "none";
         }
 

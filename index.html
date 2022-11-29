@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Main heading section that defines the setup and requirements for my web-page. -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,55 +12,26 @@
     <script src="https://kit.fontawesome.com/c78706af01.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
 
 
-
-    <!-- ***************************** -->
-    <!-- *        MAIN Section       * -->
-    <!-- ***************************** -->
-    <div id="nav-bar">
-        <div class="container">
-
-            <nav>
-                <div class="logo animate__animated animate__fadeInLeft">
-                    <p class="logo-dev">Applications Programmer</p>
-                </div>
-
-                <ul id="sidemenu">
-                    <i class="fas fa-times close-menu" onclick="closeMenu()" title="Close Menu"></i>
-                    <li class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#" onclick="page('header')">Home</a></li>
-                    <li class="animate__animated animate__fadeInDown animate__delay-1s"><a href="#" onclick="page('about')">About</a></li>
-                    <!-- <li><a href="#services">Services</a></li> -->
-                    <li class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#" onclick="page('portfolio')">Portfolio</a></li>
-                    <li class="animate__animated animate__fadeInDown animate__delay-1s"><a href="#" onclick="page('contact')">Contact</a></li>
-                    <li class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#" onclick="page('resume')">Resume</a></li>
-                </ul>
-
-                <a class="open-menu"><i class="fas fa-bars" onclick="showMenu()" title="Show Menu"></i></a>
-
-            </nav>
-
-            <div id="header" class="header-text animate__animated animate__fadeInRight">
-                <p>Software / Web Developer</p>
-                <h1><span>Brian Zoulko</span></h1>
-            </div>
-        </div>
-    </div>
-
+    <div w3-include-html="../pages/home.html"></div>
 
 
     <!-- ***************************** -->
-    <!-- *        ABOUT Section      * -->
+    <!-- *     A B O U T  Section    * -->
     <!-- ***************************** -->
     <div id="about">
         <div class="container">
             <div class="row">
 
+                <!-- Animated image of me. -->
                 <div class="about-col-1 animate__animated animate__fadeInLeft">
                     <img src="./images/BriansWorking.gif">
                 </div>
 
+                <!-- About me section, explains my skills, experience and education. -->
                 <div class="about-col-2 animate__animated animate__fadeInRight">
 
                     <h1 class="sub-title">About Me</h1>
@@ -123,12 +95,15 @@
         </div>
     </div>
 
+
+
     <!-- ***************************** -->
-    <!-- *        WORK Section       * -->
+    <!-- *      W O R K  Section     * -->
     <!-- ***************************** -->
     <div id="portfolio">
         <div class="container">
 
+            <!-- Samples of my work and abilities in web-development. -->
             <h1 class="sub-title animate__animated animate__fadeInDown">My Work</h1>
 
             <div class="work-list">
@@ -184,10 +159,12 @@
 
 
     <!-- ***************************** -->
-    <!-- *      CONTACT Section      * -->
+    <!-- *   C O N T A C T  Section  * -->
     <!-- ***************************** -->
     <div id="contact">
         <div class="container">
+
+            <!-- My contact screen for sending me a direct message. -->
             <div class="row">
                 <div class="contact-left animate__animated animate__fadeInLeft">
                     <h1 class="sub-title">Contact Me</h1>
@@ -219,7 +196,7 @@
 
 
     <!-- ***************************** -->
-    <!-- *       RESUME Section      * -->
+    <!-- *    R E S U M E  Section   * -->
     <!-- ***************************** -->
     <div id="resume">
         <div class="container animate__animated animate__fadeInUp">
@@ -230,16 +207,23 @@
 
 
     <!-- ***************************** -->
-    <!-- *       FOOTER Section      * -->
+    <!-- *    F O O T E R  Section   * -->
     <!-- ***************************** -->
     <div class="footer">
+
+        <!-- This will be used in the future, for now it's just there. -->
         <p class="footer-left"><a class="footer-name">&#160;&#160;</a></p>
         <p class="footer-center"></p>
         <p class="footer-right"></p>
+
     </div>
 
 </body>
 
+<!-- Javascript to include html sections as pages. -->
+<script src="./assests/js/pages.js"></script>
+
+<!-- Javascript code to handle all on-click events. -->
 <script src="./assests/js/index.js"></script>
 
 </html>

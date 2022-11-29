@@ -47,7 +47,7 @@ body {
     background-position-y: bottom;
     background-position-x: left;
     background-repeat: no-repeat;
-    background-size: 50vh;
+    background-size: 43vh;
     animation: fadeIn;
     animation-duration: 2s;
 }
@@ -81,17 +81,23 @@ nav {
 
 .logo-dev {
     color: var(--lightgrey);
-    height: 26px;
-    width: 300px;    
+    height: auto;
+    width: auto;    
     font-size: 1rem;
     font-weight: 300;
     margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     border-color: var(--paleblue);
     border-width: 2px;
     border-radius: 4px;
     box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--lightgrey);
     background-color: var(--paleblue);
+}
+
+nav .fas {
+    padding: 20px 20px;
 }
 
 nav ul li {
@@ -488,16 +494,6 @@ form .btn {
 
 
 
-/* ********************************** */
-/*          Navigation Icons          */
-/* ********************************** */
-
-nav .fas {
-    display: none;
-    padding: 20px 20px;
-}
-
-
 
 /* ********************************** */
 /*         CSS Small Screens          */
@@ -531,26 +527,6 @@ nav .fas {
     nav ul li {
         display: block;
         margin: 25px;        
-    }
-
-    /* #header {
-        background-size: 80%;
-        background-position-y: 25vh; 
-    }  */
-
-    .close-menu {
-        border-width: 2px;
-        border-color: var(--darkgrey);
-        border-radius: 6px;
-    }
-
-    .open-menu {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        border-width: 2px;
-        border-color: var(--darkgrey);
-        border-radius: 6px;
     }
 
     nav ul .fas {

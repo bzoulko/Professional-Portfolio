@@ -617,3 +617,22 @@ nav .fas {
         margin-top: 170vh;
     }
 } */
+
+
+/* Mobile Phones 358 x 714*/
+@media only screen and (max-width: 380px) { 
+    body {
+        color: var(--white);
+        background-color: var(--black);
+        background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
+    }    
+}
+
+/* Mobile Phones Side Ways */
+@media only screen and (max-height: 280px) { 
+    body {
+        color: var(--white);
+        background-color: var(--black);
+        background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
+    }    
+}

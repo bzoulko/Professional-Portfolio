@@ -4,7 +4,6 @@ var tabLinks        = document.getElementsByClassName("tab-links");
 var tabContents     = document.getElementsByClassName("tab-contents");
 var animateItems    = document.getElementsByClassName("animate-items");
 var sideMenu        = document.getElementById("sidemenu");
-// var navBar          = document.getElementById("nav-bar");
 
 
 /**
@@ -30,31 +29,46 @@ function openTab(tabName) {
 
 
 /**
- * Close Menu() - Hide Navigation Bar.
+ * Determine how the animation should be on the page based on the (=)Open or (X)Close on the Navigation Bar.
+ * @param {*} option 
  */
-function closeMenu() {
-    sideMenu.style.right = "-200px";
+function PopUpMenu(option) {
+    sideMenu.style.right = (option === 'close' ? "-200px" : "0px");
 
-    // Add animation to class list.
     for (animateItem of animateItems) {
-        animateItem.classList.add("animate__animated");
+        if (option === 'close') 
+            animateItem.classList.add("animate__animated");
+        else
+            animateItem.classList.remove("animate__animated");  
     }
 }
 
 
 /**
+ * Close Menu() - Hide Navigation Bar.
+ */
+// function closeMenu() {
+//     sideMenu.style.right = "-200px";
+
+//     // Add animation to class list.
+//     for (animateItem of animateItems) {
+//         animateItem.classList.add("animate__animated");
+//     }
+// }
+
+
+/**
  * Show Menu() - Display Navigation Bar.
  */
-function showMenu() {
-    sideMenu.style.right = "0px";
+// function showMenu() {
+//     sideMenu.style.right = "0px";
 
-    // Remove animation from class list.
-    for (animateItem of animateItems) {
-        animateItem.classList.remove("animate__animated");
-    }
+//     // Remove animation from class list.
+//     for (animateItem of animateItems) {
+//         animateItem.classList.remove("animate__animated");
+//     }
 
-    event.currentTarget.classList.add("animate__animated");
-}
+// }
 
 
 /**

@@ -52,8 +52,8 @@ function PopUpMenu(option) {
 function page(Id) {
     
     // All valid ID's for the html Page.
-    const Ids = ['header','about','portfolio','contact','resume'];
-    let navPage = document.getElementById('nav-bar');
+    const Ids = ['home-footer','about','portfolio','contact','resume'];
+    let navPage = document.getElementById('home');
 
     // console.log("ismobile: ", isMobile());
 
@@ -71,14 +71,14 @@ function page(Id) {
             // maintain the right size when applied.
             if (navPage.style.backgroundSize != "0px") hBackgroundSize = navPage.style.backgroundSize;
 
-            // Maintain the position for the nav-bar and (show or hide) background image when
+            // Maintain the position for the home and (show or hide) background image when
             // (on or off) the home page.
-            if (Id === "header") {
+            if (Id === "home-footer") {
                 // Show the Home Page.
                 navPage.style.height = "100vh";
                 navPage.style.backgroundSize = hBackgroundSize;
             } else {
-                // Maintain nav-bar position and hide background image... Not on Home Page.
+                // Maintain home position and hide background image... Not on Home Page.
                 navPage.style.height = "10vh";
                 navPage.style.backgroundSize = "0px";                
             }

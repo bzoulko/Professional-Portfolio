@@ -29,17 +29,13 @@ body {
     background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
 }
 
-/* .fa-times {
-    border-color: var(--white);
-    border-width: 2px;
-    border-radius: 4px;
-} */
+
 
 /* ********************************** */
-/*            H E A D E R             */
+/*               H O M E              */
 /* ********************************** */
 
-#nav-bar {
+#home {
     display: block;
     width: 100vw;
     height: 100vh;
@@ -48,18 +44,12 @@ body {
     background-position-x: left;
     background-repeat: no-repeat;
     background-size: 43vh;
-    animation: fadeIn;
-    animation-duration: 2s;
+    /* animation: fadeIn; */
+    /* animation-duration: 2s; */
 }
 
 .container {
     padding: 10px 4%;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo, .logo-init, .logo-dev {
@@ -92,6 +82,12 @@ nav {
     background-color: var(--paleblue);
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -118,30 +114,6 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%
-}
-
-.header-text {
-    margin-top: 72vh;
-    margin-bottom: 0px;
-    width: 70vw;
-    justify-content: left;
-    font-size: 3vh;
-    text-align: center;
-    border-color: var(--paleblue);
-    border-width: 2px;
-    border-radius: 8px;
-    box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--paleblue);
-    background-color: var(--paleblue);
-    /* backdrop-filter: blur(80%); */
-    padding: 5px 5px;
-}
-
-.header-text h1 {
-    font-size: 6vh;
-}
-
-.header-text h1 span {
-    color: var(--blue);
 }
 
 
@@ -235,7 +207,7 @@ nav ul li a:hover::after {
 
 
 /* ********************************** */
-/*                WORK                */
+/*              W O R K               */
 /* ********************************** */
 #portfolio {
     /* display: flexbox; */
@@ -334,7 +306,7 @@ nav ul li a:hover::after {
 
 
 /* ********************************** */
-/*              CONTACT               */
+/*           C O N T A C T            */
 /* ********************************** */
 #contact {
     /* display: inline-flex; */
@@ -342,7 +314,6 @@ nav ul li a:hover::after {
     width: 100vw;
     height: 100vh;
     padding: 30px 0px;
-    /* margin-top: 40vh; */
 }
 
 .contact-left {
@@ -426,8 +397,9 @@ form .btn {
 }
 
 
+
 /* ********************************** */
-/*               RESUME               */
+/*            R E S U M E             */
 /* ********************************** */
 #resume {
     /* display: inline-flex; */
@@ -450,38 +422,28 @@ form .btn {
 
 
 /* ********************************** */
-/*               FOOTER               */
+/*       H O M E   F O O T E R        */
 /* ********************************** */
-#footer {
-    display: flex;
+#home-footer {
+    position: fixed;
     width: 100%;
     height: auto;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 300;
-    position: fixed;
-    bottom: 0;
-    justify-content: space-between;
+    bottom: 0px;
     background-image: linear-gradient(to bottom, var(--paleblue), var(--black), var(--darkgrey));
+} 
+
+.footer-text {
+    height: auto;
+    width: auto;
+    font-size: 3vh;
+    align-content: center;
+    text-align: center;
+    padding: 5px 5px;
 }
 
-.footer-left {
-    margin-left: 20px;
-}
-
-.footer-right {
-    margin-right: 20px;
-}
-
-.footer-left, .footer-right {
-    margin-top: 5px;
-    color: var(--paleyellow);
-}
-
-.footer-name {
-    color: var(--white);
-    font-size: 20px;
-    font-weight: 500;
+.footer-text h1 {
+    font-size: 5vh;
+    color: var(--blue);
 }
 
 
@@ -586,9 +548,9 @@ nav .fas {
 }
 
 /* Mobile Phones 358 x 714*/
-@media only screen and (max-width: 380px) { 
+/* @media only screen and (max-width: 380px) { 
 
-    #header {
+    #home-title {
         background-size: 225px;
         background-position-y: 25vh;
     } 
@@ -611,12 +573,12 @@ nav .fas {
         color: var(--white);
     }
     
-}
+} */
 
 /* Mobile Phones Side Ways */
-@media only screen and (max-height: 280px) { 
+/* @media only screen and (max-height: 280px) { 
 
-    #header {
+    #home-title {
         background-size: 130px;
         background-position-y: 19vh;
     } 
@@ -654,4 +616,4 @@ nav .fas {
     #resume {
         margin-top: 170vh;
     }
-}
+} */

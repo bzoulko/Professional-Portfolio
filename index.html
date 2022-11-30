@@ -17,23 +17,26 @@
     <!-- ***************************** -->
     <!-- *      H O M E  Section     * -->
     <!-- ***************************** -->
-    <section id="nav-bar">
+    <section id="home">
         <div class="container">
 
+            <!-- Home Navigation Bar -->
             <nav>
-                <!-- Developer logo, for now it's just text. -->
+
+                <!-- Home Logo Text -->
                 <div class="logo animate-items animate__animated animate__fadeInLeft">
                     <p class="logo-dev">Applications Programmer</p>
                 </div>
 
+                <!-- Home Side Menu w/ Nav-Bar Items -->
                 <ul id="sidemenu">
 
-                    <!-- Show [X] option. -->
+                    <!-- Show [X] option. (Close Menu) -->
                     <i class="fas fa-times open-menu" onclick="PopUpMenu('close')" title="Close Menu"></i>
 
                     <!-- Navigation Bar Items. -->
                     <li class="animate-items animate__animated animate__fadeInUp animate__delay-1s"><a href="#"
-                            onclick="page('header')">Home</a></li> <!-- Home Section -->
+                            onclick="page('home-footer')">Home</a></li> <!-- Home Section -->
                     <li class="animate-items animate__animated animate__fadeInDown animate__delay-1s"><a href="#"
                             onclick="page('about')">About</a></li> <!-- About Section -->
                     <li class="animate-items animate__animated animate__fadeInUp animate__delay-1s"><a href="#"
@@ -45,18 +48,24 @@
 
                 </ul>
 
-                <!-- Show [=] option. -->
+                <!-- Show [=] option. (Show Menu) -->
                 <a class="close-menu"><i class="fas fa-bars" onclick="PopUpMenu('open')" title="Show Menu"></i></a>
 
             </nav>
 
-            <!-- Main title for what I do best.  -->
-            <div id="header" class="header-text animate-items animate__animated animate__fadeInRight">
+        </div>
+
+        <!-- Home Footer -->
+        <div id="home-footer">
+
+            <!-- Home Footer Text -->
+            <div class="footer-text animate-items animate__animated animate__fadeInUp animate__delay-1s">
                 <p>Software / Web Developer</p>
-                <h1><span>Brian Zoulko</span></h1>
+                <h1>Brian Zoulko</h1>
             </div>
 
         </div>
+
     </section>
 
 
@@ -244,20 +253,6 @@
         <div class="container animate-items animate__animated animate__fadeInUp">
             <iframe src="./images/BriansResumeFullStack.pdf#view=fit" frameborder="0"></iframe>
         </div>
-    </section>
-
-
-
-    <!-- ***************************** -->
-    <!-- *    F O O T E R  Section   * -->
-    <!-- ***************************** -->
-    <section id="footer">
-
-        <!-- This will be used in the future, for now it's just there. -->
-        <p class="footer-left"><a class="footer-name">&#160;&#160;</a></p>
-        <p class="footer-center"></p>
-        <p class="footer-right"></p>
-
     </section>
 
 </body>

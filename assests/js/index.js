@@ -2,8 +2,7 @@
 var hBackgroundSize = 0;
 var tabLinks        = document.getElementsByClassName("tab-links");
 var tabContents     = document.getElementsByClassName("tab-contents");
-// var openMenu        = document.getElementsByClassName("open-menu");
-// var closeMenu       = document.getElementsByClassName("close-menu");
+var animateItems    = document.getElementsByClassName("animate-items");
 var sideMenu        = document.getElementById("sidemenu");
 // var navBar          = document.getElementById("nav-bar");
 
@@ -39,9 +38,10 @@ function closeMenu() {
     // Apply animation to all DIV's.
     console.log("Apply animation!");
 
-    // Remove menu controls to class list.
-    // openMenu.classList.remove("fa-times");
-    // closeMenu.classList.remove("fa-bars");    
+    // Add animation to class list.
+    for (animateItem of animateItems) {
+        animateItem.classList.add("animate__animated");
+    }
 }
 
 
@@ -54,9 +54,12 @@ function showMenu() {
     // Remove animation from all DIV's.
     console.log("Remove animation!");
 
-    // Add menu controls from class list.
-    // openMenu.classList.add("fa-times");
-    // closeMenu.classList.add("fa-bars");
+    // Remove animation from class list.
+    for (animateItem of animateItems) {
+        animateItem.classList.remove("animate__animated");
+    }
+
+    event.currentTarget.classList.add("animate__animated");
 }
 
 
@@ -68,9 +71,8 @@ function showMenu() {
 function page(Id) {
     
     // All valid ID's for the html Page.
-    const nav = 'nav-bar';
     const Ids = ['header','about','portfolio','contact','resume'];
-    let navPage = document.getElementById(nav);
+    let navPage = document.getElementById('nav-bar');
 
     // Loop through each ID and display the page selected via passing argument
     // giving the html the look and feel of separate web pages.

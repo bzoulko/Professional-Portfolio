@@ -45,33 +45,6 @@ function PopUpMenu(option) {
 
 
 /**
- * Close Menu() - Hide Navigation Bar.
- */
-// function closeMenu() {
-//     sideMenu.style.right = "-200px";
-
-//     // Add animation to class list.
-//     for (animateItem of animateItems) {
-//         animateItem.classList.add("animate__animated");
-//     }
-// }
-
-
-/**
- * Show Menu() - Display Navigation Bar.
- */
-// function showMenu() {
-//     sideMenu.style.right = "0px";
-
-//     // Remove animation from class list.
-//     for (animateItem of animateItems) {
-//         animateItem.classList.remove("animate__animated");
-//     }
-
-// }
-
-
-/**
  * Show the passed Id elements and all
  * others to prevent viewing.
  * @param {*} Id 

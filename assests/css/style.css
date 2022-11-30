@@ -545,6 +545,12 @@ nav .fas {
         flex-basis: 100%
     }
 
+    body {
+        color: var(--white);
+        background-color: var(--black);
+        background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
+    }    
+
 }
 
 /* Mobile Phones 358 x 714*/
@@ -620,19 +626,19 @@ nav .fas {
 
 
 /* Mobile Phones 358 x 714*/
-@media only screen and (max-width: 380px) { 
+/* @media only screen and (max-width: 380px) { 
     body {
         color: var(--white);
         background-color: var(--black);
         background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
     }    
-}
+} */
 
 /* Mobile Phones Side Ways */
-@media only screen and (max-height: 280px) { 
+/* @media only screen and (max-height: 280px) { 
     body {
         color: var(--white);
         background-color: var(--black);
         background-image: linear-gradient(to bottom right, var(--paleblue), var(--darkgrey), var(--black));
     }    
-}
+} */

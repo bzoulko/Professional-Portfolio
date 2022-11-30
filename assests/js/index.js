@@ -13,12 +13,12 @@ var sideMenu        = document.getElementById("sidemenu");
 function openTab(tabName) {
 
     // Remove active link tab from class list.
-    for (tabLink of tabLinks) {
+    for (let tabLink of tabLinks) {
         tabLink.classList.remove("active-link");
     }
 
     // Remove active tab from class list.
-    for (tabContent of tabContents) {
+    for (let tabContent of tabContents) {
         tabContent.classList.remove("active-tab");
     }
 
@@ -93,7 +93,10 @@ function page(Id) {
 }
 
 
-
+/**
+ * Detect when the device is a mobile unit based on REGEX algorithum.
+ * @returns (TRUE/FALSE)
+ */
 function isMobile() {
     var check = false;
     (function (a) {

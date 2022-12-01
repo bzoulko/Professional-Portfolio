@@ -300,6 +300,22 @@ nav ul li a:hover::after {
     height: 100%;
 }
 
+.work-click-image {
+    width: 100%;
+    height: auto;
+    color: var(--lightgrey);
+    text-align: center;
+}
+
+.work-deploy-icon {
+    width: 100%;
+    height: auto;
+    font-size: larger;
+    font-weight: 600;
+    color: var(--paleyellow);
+    text-align: center;
+}
+
 .btn {
     display: block;
     margin: 50px auto;
@@ -472,7 +488,7 @@ form .btn {
 /* ********************************** */
 /*          Navigation Icons          */
 /* ********************************** */
-/* Show/Hide Open and Close Bars. */
+/* Show/Hide Menu Open and Close Bars. */
 nav .fas {
     display: none;
     padding: 20px 20px;
@@ -484,7 +500,7 @@ nav .fas {
 /*         CSS Small Screens          */
 /* ********************************** */
 
-/* Tablets */
+/* Tablets and Below */
 @media only screen and (max-width: 1160px) { 
 
     .sub-title {

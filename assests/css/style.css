@@ -9,6 +9,7 @@
     --palered: #b54769;
     --paleblue: #395b7d;
     --lightgrey: #ababab;
+    --mediumgrey: rgba(255,255,255,.3);
     --darkgrey: #262626;
     --paleyellow: #eee88a;
     --darkerpaleblue: #2e4352;
@@ -67,6 +68,43 @@ body.waiting * {
 }
 
 
+/* Used to show text with an etched edge. */
+.etched-text {
+    color: var(--paleblue);
+    text-shadow: 0px 1px 0px var(--mediumgrey), 0px -1px 0px var(--black);
+}
+
+/* Used to show (light) shadow effects behind an object. */
+.box-blue-extra-lightshadow {
+    border-color: var(--paleblue);
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 8px var(--darkgrey), 0 0 95px var(--blue);
+    background-color: var(--paleblue);
+}
+.box-grey-low-lightshadow {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: var(--darkgrey);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 0px var(--darkgrey), 0 0 8px var(--lightgrey);
+    background-color: var(--lightgrey);
+}
+/* .text-yellow-lightshadow {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: var(--paleyellow);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 0px var(--blue), 0 0 8px var(--lightgrey);
+    background-color: var(--paleyellow);
+}
+.text-white-lightshadow {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: var(--white);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 0px var(--darkgrey), 0 0 8px var(--lightgrey);
+    background-color: var(--white);
+} */
 
 /* ********************************** */
 /*          H O M E   P A G E         */
@@ -88,7 +126,6 @@ body.waiting * {
     font-weight: 600;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--lightgrey);
 }
 
 .logo-init {
@@ -96,20 +133,14 @@ body.waiting * {
 }
 
 .logo-dev {
-    color: var(--lightgrey);
     height: auto;
     width: auto;    
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
     margin-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-    border-color: var(--paleblue);
-    border-width: 2px;
-    border-radius: 4px;
-    box-shadow: inset 0px 0px 2px var(--darkgrey), 0 0 8px var(--lightgrey);
-    background-color: var(--paleblue);
 }
 
 nav {
@@ -197,8 +228,6 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
     width: 100%;
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 8px var(--black), 0 0 95px var(--blue);
 }
 
 .about-col-2 {
@@ -212,8 +241,7 @@ nav ul li a:hover::after {
 }
 
 .tab {
-    color: var(--white);
-    margin-left: 40px;
+    margin-left: 15px;
 }
 
 .tab-titles {
@@ -232,7 +260,7 @@ nav ul li a:hover::after {
 
 .tab-links {
     margin-right: 50px;
-    color: var(--white);
+    color: var(--paleyellow);
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -264,7 +292,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: var(--paleyellow);
+    color: var(--white);
     font-size: 14px;
 }
 
@@ -584,8 +612,6 @@ nav .fas {
 
     .about-col-1 img {
         width: 65%;
-        border-radius: 15px;
-        box-shadow: inset 0px 0px 8px var(--black), 0 0 95px var(--blue);
     }
 
     .about-col-1 {

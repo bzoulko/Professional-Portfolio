@@ -11,7 +11,7 @@
     --lightgrey: #ababab;
     --darkgrey: #262626;
     --paleyellow: #eee88a;
-    --lighterdarkgrey: #2d4d62;
+    --darkerpaleblue: #2e4352;
 
     /* Set global animation speeds. */
     --animate-duration: 800ms;
@@ -226,7 +226,7 @@ nav ul li a:hover::after {
     width: 100%;
     border-radius: 5px;
     border-style: solid;
-    color: var(--lighterdarkgrey);
+    color: var(--darkerpaleblue);
     margin-top: -25px;
 }
 

@@ -175,8 +175,18 @@ nav ul li a:hover::after {
     margin: 20px 0px 40px;
 }
 
+.tab-underline {
+    height: 0px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    color: var(--darkgrey);
+    margin-top: -25px;
+}
+
 .tab-links {
     margin-right: 50px;
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -219,6 +229,7 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block
 }
+
 
 
 /* ********************************** */

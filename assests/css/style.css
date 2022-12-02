@@ -540,7 +540,16 @@ form .btn {
     justify-content: center;
 }
 
-#resume iframe {
+/* #resume iframe {
+    width: 90vw;
+    height: 100vh;
+    margin-bottom: 40px;
+    border-width: 0px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 8px var(--black), 0 0 18px var(--blue);
+} */
+
+#resume img {
     width: 90vw;
     height: 100vh;
     margin-bottom: 40px;
@@ -548,7 +557,6 @@ form .btn {
     border-radius: 15px;
     box-shadow: inset 0px 0px 8px var(--black), 0 0 18px var(--blue);
 }
-
 
 
 /* ********************************** */

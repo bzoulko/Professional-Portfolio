@@ -551,7 +551,7 @@ form .btn {
 
 #resume img {
     width: 90vw;
-    height: 100vh;
+    height: auto;
     margin-bottom: 40px;
     border-width: 0px;
     border-radius: 15px;

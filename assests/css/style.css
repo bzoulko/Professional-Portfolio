@@ -145,17 +145,11 @@ body.waiting * {
     display: block;
     width: 100vw;
     height: 100vh;
-    /* background-image: url("../../images/ImageWithNoBkgrnd.png"); */
-    /* background-position-y: bottom; */
-    /* background-position-x: left; */
-    /* background-repeat: no-repeat; */
-    /* background-size: 43vh; */
-
-    /* background-image: url("../../images/FullStackWebDeveloper.png");
-    background-position-y: center;
-    background-position-x: center;
+    background-image: url("../../images/ImageWithNoBkgrnd.png");
+    background-position-y: bottom;
+    background-position-x: left;
     background-repeat: no-repeat;
-    background-size: 50vh; */
+    background-size: 43vh;
 }
 
 .logo, .logo-init, .logo-dev {
@@ -215,12 +209,11 @@ nav ul li a:hover::after {
     width: 100%
 }
 
-#home img {
+/* #home img {
     height: auto;
     width: auto;
     position: absolute;    
-    /* background-image: linear-gradient(to bottom, var(--paleblue), var(--black), var(--darkgrey)); */
-} 
+}  */
 
 
 

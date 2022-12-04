@@ -328,12 +328,20 @@ nav ul li a:hover::after {
 
 .tab-contents ul li {
     list-style: none;
+    color: var(--white);
+    font-weight: 600;
     margin: 10px 0px;
 }
 
 .tab-contents ul li span {
-    color: var(--white);
+    color: var(--mediumgrey);
+    font-weight: 400;
     font-size: 14px;
+}
+
+.tab-text-headings {
+    font-weight: 200;
+    color: var(--lightgrey);
 }
 
 .tab-contents {
@@ -368,10 +376,6 @@ nav ul li a:hover::after {
     position: relative;
     overflow: hidden;
     box-shadow: inset 0px 0px 8px var(--black), 0 0 15px var(--blue);
-}
-
-.work-text-headings {
-    color: var(--blue);
 }
 
 .work img {

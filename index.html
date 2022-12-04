@@ -10,6 +10,7 @@
     <title>Brian Zoulko</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/confetti.css">
     <script src="https://kit.fontawesome.com/c78706af01.js" crossorigin="anonymous"></script>
 
 <body>
@@ -113,13 +114,16 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><a class="work-text-headings">Full Stack Developer</a>
-                                <br>Font-End Web Developer and Back-End Database Developer</li><br>
+                                <br>Font-End Web Developer and Back-End Database Developer
+                            </li><br>
 
                             <li><a class="work-text-headings">PC Applications Developer</a>
-                                <br>Developed Software Applications on: Unix, Linux, and Windows Operating Systems</li><br>
+                                <br>Developed Software Applications on: Unix, Linux, and Windows Operating Systems
+                            </li><br>
 
                             <li><a class="work-text-headings">Mainframe</a>
-                                <br>Applications Programmer on: IBM ES9000, and AS400</li><br>
+                                <br>Applications Programmer on: IBM ES9000, and AS400
+                            </li><br>
                         </ul>
                     </div>
 
@@ -128,19 +132,23 @@
                         <ul>
                             <li><a class="work-text-headings">Software Developer / Mainframe Programmer</a>
                                 <br><span>Jan. 2000 - Oct. 2022</span>
-                                <br>Starcrest Products of California</li><br>
+                                <br>Starcrest Products of California
+                            </li><br>
 
                             <li><a class="work-text-headings">Computer Programmer</a>
                                 <br><span>Dec. 1998 - Jan. 2000</span>
-                                <br>ISD Corp.</li><br>
+                                <br>ISD Corp.
+                            </li><br>
 
                             <li><a class="work-text-headings">Mainframe Programmer</a>
                                 <br><span>Oct. 1994 - Dec. 1998</span>
-                                <br>Starcrest Products of California</li><br>
+                                <br>Starcrest Products of California
+                            </li><br>
 
                             <li><a class="work-text-headings">Customer Support / Programmer</a>
                                 <br><span>Sept. 1993 - Oct. 1994</span>
-                                <br>Inland Cash Register</li><br>
+                                <br>Inland Cash Register
+                            </li><br>
                         </ul>
                     </div>
 
@@ -149,19 +157,23 @@
                         <ul>
                             <li><a class="work-text-headings"> Certificate as Web Developer</a>
                                 <br><span>Aug. 2022 - Nov. 2022</span>
-                                <br>UCSD Extended Studies Bootcamp</li><br>
+                                <br>UCSD Extended Studies Bootcamp
+                            </li><br>
 
                             <li><a class="work-text-headings"> VB6 & Advanced VB6, Object Oriented Programming</a>
                                 <br><span>May. 1999 - Nov. 1999</span>
-                                <br>UCR Extension Center - University of California, Riverside</li><br>
+                                <br>UCR Extension Center - University of California, Riverside
+                            </li><br>
 
                             <li><a class="work-text-headings"> Certificate as Computer Programmer</a>
                                 <br><span>Oct. 1993 - Apr. 1994</span>
-                                <br>CLC - Computer Learning Center</li><br>
+                                <br>CLC - Computer Learning Center
+                            </li><br>
 
                             <li><a class=""></a>
                                 <br><span>Aug. 1991 - Oct. 1993</span>
-                                <br>RCC - Riverside Community College</li><br>
+                                <br>RCC - Riverside Community College
+                            </li><br>
                         </ul>
                     </div>
 
@@ -262,13 +274,42 @@
                     <!-- <a href="./images/brianzoulkoFull.jpg" download class="btn ext-btn">Download Resume</a> -->
                 </div>
                 <div class="contact-right animate-items animate__animated animate__fadeInRight">
+                    
                     <form name="submit-to-google-sheet">
                         <input class="inputField form-fields" type="text" name="Name" placeholder="Your Name" required />
                         <input class="inputField form-fields" type="email" name="Email" placeholder="Your Email" required />
-                        <textarea class="inputField form-fields" name="Message" rows="6" placeholder="Your Message" required ></textarea>
-                        <button type="submit" class="btn ext-btn form-fields">Submit</button>
+                        <textarea class="inputField form-fields" name="Message" rows="6" placeholder="Your Message" required></textarea>
+
+                        <!-- <button type="submit" class="btn ext-btn form-fields">Submit</button> -->
+                        <button type="submit" id="button" class="ready btn ext-btn form-fields">
+
+                            <div class="message submitMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
+                                <polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 "/>
+                                <line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3"/>
+                                </svg> <span class="button-text">Submit</span>
+                            </div>
+                            
+                            <div class="message loadingMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                                <circle class="loadingCircle" cx="2.2" cy="10" r="1.6"/>
+                                <circle class="loadingCircle" cx="9.5" cy="10" r="1.6"/>
+                                <circle class="loadingCircle" cx="16.8" cy="10" r="1.6"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="message successMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                                <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 "/>
+                                </svg> <span class="button-text">Success</span>
+                            </div>
+    
+                        </button>
+                              
                     </form>
-                    <span id="msg"></span>
+                    <canvas id="canvas"></canvas>
+
+                    <!-- <span id="msg"></span> -->
                 </div>
             </div>
 
@@ -286,7 +327,7 @@
             <iframe src="./images/BriansResumeFullStack.png#view=fit" frameborder="0"></iframe>
         </div> -->
         <div class="container animate-items animate__animated animate__fadeInUp">
-            <img class="box-blue-extra-lightshadow" src="./images/BriansResumeFullStack.png"/>
+            <img class="box-blue-extra-lightshadow" src="./images/BriansResumeFullStack.png" />
         </div>
     </section>
 
@@ -295,5 +336,6 @@
 <!-- Javascript code to handle all on-click events. -->
 <script src="./assests/js/index.js"></script>
 <script src="./assests/js/form.js"></script>
+<script src="./assests/js/confetti.js"></script>
 
 </html>

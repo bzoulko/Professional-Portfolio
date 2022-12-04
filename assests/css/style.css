@@ -138,6 +138,8 @@ body.waiting * {
     filter: drop-shadow(15px 15px 7px var(--darkgrey));
 }
 
+
+
 /* ********************************** */
 /*          H O M E   P A G E         */
 /* ********************************** */
@@ -581,8 +583,7 @@ form .btn {
     height: auto;
     margin-bottom: 40px;
     border-width: 0px;
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 8px var(--black), 0 0 18px var(--blue);
+    border-radius: 3px;
 }
 
 

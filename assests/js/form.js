@@ -11,6 +11,7 @@ var body         = document.body;
 form.addEventListener('submit', async e => {
   
     body.classList.add('waiting');
+    clickButton(); // Initiate the confetti...
     e.preventDefault()
 
     await fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -32,8 +33,8 @@ form.addEventListener('submit', async e => {
  */
 function sendMessage(sMessage, iMilliseconds) {
     setFormDisabled(true);
-    msg.innerHTML = sMessage;
-    setTimeout(() => msg.innerHTML = "", iMilliseconds);
+    // msg.innerHTML = sMessage;
+    // setTimeout(() => msg.innerHTML = "", iMilliseconds);
     form.reset();
     setFormDisabled(false);
 }

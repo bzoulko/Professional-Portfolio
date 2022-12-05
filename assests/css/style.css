@@ -177,6 +177,11 @@ body.waiting * {
     text-align: center;
 }
 
+.logo-size {
+    width: 30px;
+    height: auto;
+}
+
 nav {
     display: flex;
     justify-content: space-between;

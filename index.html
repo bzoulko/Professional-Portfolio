@@ -2,7 +2,6 @@
 <html lang="en">
 
 <!-- Main heading section that defines the setup and requirements for my web-page. -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +22,7 @@
         <div class="container">
 
             <!-- Home Navigation Bar -->
-            <nav>
+            <nav onmouseover="PopUpMenu('open')" onmouseout="PopUpMenu('close')">
 
                 <!-- Home Logo Text -->
                 <div class="logo animate-items animate__animated animate__fadeInLeft">                    
@@ -47,7 +46,8 @@
                             onclick="page('resume')">Resume</a></li> <!-- Resume Section -->
 
                     <!-- Show [X] option. (Close Menu) -->
-                    <i class="fas fa-times open-menu" onclick="PopUpMenu('close')" title="Close Menu"></i>
+                    <!-- <i class="fas fa-times open-menu" onclick="PopUpMenu('close')" title="Close Menu"></i> -->
+                    <i class="fas" onclick="PopUpMenu('close')" title="Close Menu"></i>
 
                 </ul>
 
@@ -55,8 +55,6 @@
                 <a class="close-menu"><i class="fas fa-bars" onclick="PopUpMenu('open')" title="Show Menu"></i></a>
 
             </nav>
-
-            <!-- <img class="round-edges shadow-behind animate-items animate__animated animate__fadeInDown" src="./images/FullStackWebDeveloper.png"> -->
 
         </div>
 
@@ -197,6 +195,7 @@
 
             <div class="work-list">
 
+                <!-- Password Generator Application Link -->
                 <div class="work animate-items animate__animated animate__fadeInLeft">
                     <img src="./images/PasswordGenerator.png" alt="work-1">
                     <p class="work-click-image">Click Image</p>
@@ -213,6 +212,7 @@
                     </div>
                 </div>
 
+                <!-- Note Taker Application Link -->
                 <div class="work animate-items animate__animated animate__fadeInDown">
                     <img src="./images/NoteTaker.png" alt="work-2" title="Click Icon to see Deployed App.">
                     <p class="work-click-image">Click Image</p>
@@ -228,6 +228,7 @@
                     </div>
                 </div>
 
+                <!-- Weather Dashboard Application Link -->
                 <div class="work animate-items animate__animated animate__fadeInRight">
                     <img src="./images/WeatherDashboard.png" alt="work-3" title="Click Icon to see Deployed App.">
                     <p class="work-click-image">Click Image</p>
@@ -246,6 +247,7 @@
                 </div>
             </div>
 
+            <!-- My GitHub Link -->
             <a rel="noreferrer" href="https://github.com/bzoulko" target="_blank" class="btn">See more</a>
 
         </div>
@@ -261,6 +263,8 @@
 
             <!-- My contact screen for sending me a direct message. -->
             <div class="row">
+
+                <!-- Contact info. LEFT-SIDE of page. -->
                 <div class="contact-left animate-items animate__animated animate__fadeInLeft">
                     <h1 class="sub-title">Contact Me</h1>
                     <div class="social-icons">
@@ -273,16 +277,16 @@
                         <a rel="noreferrer" href="https://www.linkedin.com/in/brian-zoulko-753810240/" target="_blank"
                             title="LinkedIn"><i class="fab fa-linkedin"></i>&#160;LinkedIn</a><br>
                     </div>
-                    <!-- <a href="./images/brianzoulkoFull.jpg" download class="btn ext-btn">Download Resume</a> -->
                 </div>
-                <div class="contact-right animate-items animate__animated animate__fadeInRight">
-                    
+
+                <!-- Contact info. RIGHT-SIDE of page - Form input section to receive response for web-site visitors. -->
+                <div class="contact-right animate-items animate__animated animate__fadeInRight">                    
                     <form name="submit-to-google-sheet">
+
                         <input class="inputField form-fields" type="text" name="Name" placeholder="Your Name" required />
                         <input class="inputField form-fields" type="email" name="Email" placeholder="Your Email" required />
                         <textarea class="inputField form-fields" name="Message" rows="6" placeholder="Your Message" required></textarea>
 
-                        <!-- <button type="submit" class="btn ext-btn form-fields">Submit</button> -->
                         <button type="submit" id="button" class="ready btn ext-btn form-fields">
 
                             <div class="message submitMessage">
@@ -324,13 +328,12 @@
     <!-- *    R E S U M E  Section   * -->
     <!-- ***************************** -->
     <section id="resume">
-        <!-- <div class="container animate-items animate__animated animate__fadeInUp">
-            <iframe src="./images/BriansResumeFullStack.pdf#view=fit" frameborder="0"></iframe>
-            <iframe src="./images/BriansResumeFullStack.png#view=fit" frameborder="0"></iframe>
-        </div> -->
+        
+        <!-- Image of my resume -->
         <div class="container animate-items animate__animated animate__fadeInUp">
             <img class="box-blue-extra-lightshadow" src="./images/BriansResumeFullStack.png" />
         </div>
+
     </section>
 
 </body>

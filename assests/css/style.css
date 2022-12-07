@@ -188,6 +188,16 @@ nav {
     align-items: center;
 }
 
+.hover {
+    position: relative;
+}
+
+.hoveroff {
+    display: none;
+    left: 200px;
+}
+
+
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -213,7 +223,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-    width: 100%
+    width: 100%;
 }
 
 /* #home img {

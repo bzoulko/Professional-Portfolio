@@ -188,16 +188,6 @@ nav {
     align-items: center;
 }
 
-.hover {
-    position: relative;
-}
-
-.hoveroff {
-    display: none;
-    left: 200px;
-}
-
-
 nav ul li {
     display: inline-block;
     list-style: none;

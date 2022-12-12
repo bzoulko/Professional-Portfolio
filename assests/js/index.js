@@ -4,40 +4,7 @@ var tabLinks        = document.getElementsByClassName("tab-links");
 var tabContents     = document.getElementsByClassName("tab-contents");
 var animateItems    = document.getElementsByClassName("animate-items");
 var sideMenu        = document.getElementById("sidemenu");
-// var navs            = document.getElementsByTagName("nav");
-// var bListenerAdded  = false;
-// var bListenerRemoved= true;
 
-
-// /**
-//  * Remove / Add - onmouseover and onmouseout events
-//  */
-// function checkMouseEvents() {
-    
-
-//     for(let nav of navs){
-        
-//         let addEvents = (width <= 1160);
-//         if (addEvents) {
-//             if (bListenerRemoved) {
-//                 nav.onmouseover = "PopUpMenu('open')";
-//                 nav.onmouseout = "PopUpMenu('close')";
-//                 bListenerAdded = true;
-//                 bListenerRemoved = false;
-//                 console.log("addedEvents: ", bListenerAdded);
-//             }
-//         } else {
-//             if (bListenerAdded) {
-//                 nav.onmouseover = null;
-//                 nav.onmouseout = null;
-//                 bListenerRemoved = true;
-//                 bListenerAdded = false;
-//                 console.log("removedEvent: ", bListenerRemoved);
-//             }
-//         }
-
-//     }
-// }
 
 
 /**
@@ -68,15 +35,19 @@ function openTab(tabName) {
  */
 function PopUpMenu(option) {
     let width = window.innerWidth;
-
     sideMenu.style.right = (option === 'close' ? "-200px" : "0px");
 
     for (animateItem of animateItems) {
+        
+        // Process the close side menu bar.
         if (option === 'close') 
             animateItem.classList.add("animate__animated");
         else {
+        
+            // Only open the side menu bar when screen size requires it.
             if (width <= 1160) 
                 animateItem.classList.remove("animate__animated");  
+
         }
     }
 

@@ -4,41 +4,40 @@ var tabLinks        = document.getElementsByClassName("tab-links");
 var tabContents     = document.getElementsByClassName("tab-contents");
 var animateItems    = document.getElementsByClassName("animate-items");
 var sideMenu        = document.getElementById("sidemenu");
-var navs            = document.getElementsByTagName("nav");
-var bListenerAdded  = false;
-var bListenerRemoved= true;
+// var navs            = document.getElementsByTagName("nav");
+// var bListenerAdded  = false;
+// var bListenerRemoved= true;
 
 
-/**
- * Remove / Add - onmouseover and onmouseout events
- */
-function checkMouseEvents() {
-    let width = window.innerWidth;
+// /**
+//  * Remove / Add - onmouseover and onmouseout events
+//  */
+// function checkMouseEvents() {
+    
 
-    for(let nav of navs){
+//     for(let nav of navs){
         
-        let addEvents = (width <= 1160);
-        if (addEvents) {
-            if (bListenerRemoved) {
-                nav.addEventListener("onmouseover", PopUpMenu('open'), false, true);
-                nav.addEventListener("onmouseout", PopUpMenu('close'), false, true);
-                bListenerAdded = true;
-                bListenerRemoved = false;
-                console.log("addedEvents: ", bListenerAdded);
-            }
-        } else {
-            if (bListenerAdded) {
-                nav.removeEventListener("onmouseover", PopUpMenu('open'), false, true);
-                nav.removeEventListener("onmouseout", PopUpMenu('close'), false, true);
-                bListenerRemoved = true;
-                bListenerAdded = false;
-                PopUpMenu('close')
-                console.log("removedEvent: ", bListenerRemoved);
-            }
-        }
+//         let addEvents = (width <= 1160);
+//         if (addEvents) {
+//             if (bListenerRemoved) {
+//                 nav.onmouseover = "PopUpMenu('open')";
+//                 nav.onmouseout = "PopUpMenu('close')";
+//                 bListenerAdded = true;
+//                 bListenerRemoved = false;
+//                 console.log("addedEvents: ", bListenerAdded);
+//             }
+//         } else {
+//             if (bListenerAdded) {
+//                 nav.onmouseover = null;
+//                 nav.onmouseout = null;
+//                 bListenerRemoved = true;
+//                 bListenerAdded = false;
+//                 console.log("removedEvent: ", bListenerRemoved);
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
 
 /**
@@ -68,13 +67,17 @@ function openTab(tabName) {
  * @param {*} option 
  */
 function PopUpMenu(option) {
+    let width = window.innerWidth;
+
     sideMenu.style.right = (option === 'close' ? "-200px" : "0px");
 
     for (animateItem of animateItems) {
         if (option === 'close') 
             animateItem.classList.add("animate__animated");
-        else
-            animateItem.classList.remove("animate__animated");  
+        else {
+            if (width <= 1160) 
+                animateItem.classList.remove("animate__animated");  
+        }
     }
 
     console.log("PopUpMenu - Option: ", option)

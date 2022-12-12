@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="./assests/css/style.css">
     <link rel="stylesheet" href="./assests/css/confetti.css">
     <link rel="icon"       href="./images/MyLogo.png" class="logo-size">
-    <script src="https://kit.fontawesome.com/c78706af01.js" crossorigin="anonymous"></script>
 
-<body>
+<body onmousemove="checkMouseEvents()">
 
     <!-- ***************************** -->
     <!-- *      H O M E  Section     * -->
@@ -22,7 +21,9 @@
         <div class="container">
 
             <!-- Home Navigation Bar -->
-            <nav onmouseover="PopUpMenu('open')" onmouseout="PopUpMenu('close')">
+            <!-- <nav class="nav-mouse-events" onmousemove="checkMouseEvents('true')"></nav> -->
+            <!-- <nav class="nav-mouse-events" onmouseover="PopUpMenu('open')" onmouseout="PopUpMenu('close')"> -->
+            <nav>
 
                 <!-- Home Logo Text -->
                 <div class="logo animate-items animate__animated animate__fadeInLeft">                    
@@ -212,7 +213,7 @@
                 </div>
 
                 <!-- Note Taker Application Link -->
-                <div class="work animate-items animate__animated animate__fadeInDown">
+                <div class="work animate-items animate__animated animate__fadeInUp">
                     <img src="./images/NoteTaker.png" alt="work-2" title="Click Icon to see Deployed App.">
                     <p class="work-click-image">Click Image</p>
                     <div class="layer">
@@ -338,6 +339,7 @@
 </body>
 
 <!-- Javascript code to handle all on-click events. -->
+<script src="https://kit.fontawesome.com/c78706af01.js" crossorigin="anonymous"></script>
 <script src="./assests/js/index.js"></script>
 <script src="./assests/js/form.js"></script>
 <script src="./assests/js/confetti.js"></script>

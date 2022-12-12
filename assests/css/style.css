@@ -15,8 +15,8 @@
     --darkerpaleblue: #2e4352;
 
     /* Set global animation speeds. */
-    --animate-duration: 800ms;
-    --animate-delay: 0.9s;
+    --animate-duration: 1200ms;
+    /* --animate-delay: 0.9s; */
 }
 
 

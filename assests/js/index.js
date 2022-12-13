@@ -50,8 +50,6 @@ function PopUpMenu(option) {
 
         }
     }
-
-    console.log("PopUpMenu - Option: ", option)
 }
 
 

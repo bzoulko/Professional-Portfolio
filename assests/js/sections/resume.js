@@ -1,24 +1,22 @@
-var body = document.body;
-
 // Create Elements for Resume Secrtion
-const section   = document.createElement('section');
-const division  = document.createElement('div');
-const image     = document.createElement('img');
+const resume_section   = document.createElement('section');
+const resume_division  = document.createElement('div');
+const resume_image     = document.createElement('img');
 
 // Build Section Element
-section.id = "resume";
+resume_section.id = "resume";
 
 // Build Division Element
-division.classList.add("container");
-division.classList.add("animate-items");
-division.classList.add("animate__animated");
-division.classList.add("animate__fadeInUp");
+resume_division.classList.add("container");
+resume_division.classList.add("animate-items");
+resume_division.classList.add("animate__animated");
+resume_division.classList.add("animate__fadeInUp");
 
 // Build Image Element
-image.classList.add("box-blue-extra-lightshadow");
-image.src = "./images/BriansResumeFullStack.png";
+resume_image.classList.add("box-blue-extra-lightshadow");
+resume_image.src = "./images/BriansResumeFullStack.png";
 
 // Append elements together in the body.
-division.appendChild(image);
-section.appendChild(division);
-body.appendChild(section);
+resume_division.appendChild(resume_image);
+resume_section.appendChild(resume_division);
+document.body.appendChild(resume_section);

@@ -1,75 +1,95 @@
-var body = document.body;
-
 // Create Elements for Resume Secrtion
-const section               = document.createElement('section');
-const division_container    = document.createElement('div');
-const division_row          = document.createElement('div');
-const division_info_left    = document.createElement('div');
-const division_info_right   = document.createElement('div');
-const division_icons        = document.createElement('div');
-const heading               = document.createElement('h1');
-const image                 = document.createElement('img');
+const contact_section               = document.createElement('section');
+const contact_division_container    = document.createElement('div');
+const contact_division_row          = document.createElement('div');
+const contact_division_info_left    = document.createElement('div');
+const contact_division_info_right   = document.createElement('div');
+const contact_division_icons        = document.createElement('div');
+const contact_heading               = document.createElement('h1');
+
+const contact_form                  = document.createElement('form');
+const contact_form_input            = document.createElement('input');
+const contact_form_textarea         = document.createElement('textarea');
+const contact_form_button           = document.createElement('button');
+
+const a_mailto              = document.createElement('a');
+const i_mailto              = document.createElement('i');
+
+const a_telephone           = document.createElement('a');
+const i_telephone           = document.createElement('i');
+
+const a_github              = document.createElement('a');
+const i_github              = document.createElement('i');
+
+const a_linkedin            = document.createElement('a');
+const i_linkedin            = document.createElement('i');
 
 // Build Section Element
-section.id = "contact";
+contact_section.id = "contact";
 
 // Build LEFT-SIDE Division Element
-division_container.classList.add("container");
-division_row.classList.add("row");
-division_info_left.classList.add("contact-left");
-division_info_left.classList.add("animate-items");
-division_info_left.classList.add("animate__animated");
-division_info_left.classList.add("animate__fadeInLeft");
-heading.classList.add("sub-title");
-heading.textContent = "Contact Me";
-division_icons.classList.add("social-icons");
+contact_division_container.classList.add("container");
+contact_division_row.classList.add("row");
+contact_division_info_left.classList.add("contact-left");
+contact_division_info_left.classList.add("animate-items");
+contact_division_info_left.classList.add("animate__animated");
+contact_division_info_left.classList.add("animate__fadeInLeft");
+contact_heading.classList.add("sub-title");
+contact_heading.textContent = "Contact Me";
+contact_division_icons.classList.add("social-icons");
 
-function build_mailto() {
-    // Create elements.
-    const a = document.createElement("a");
-    const i = document.createElement("i");
-    
-    // Update href, title and text content.
-    a.href          = "mailto:bzoulko@gmail.com";
-    a.title         = "Email";
-    a.textContent   = "&#160;bzoulko@gmail.com";
-    
-    // Add class names.
-    i.classList.add("fas");
-    i.classList.add("fa-paper-plane");
-    
-    // Append child element.
-    a.appendChild(i);
+// Create MAIL-TO element.
+update_element(a_mailto, null, "mailto:bzoulko@gmail.com", "Email", "", "", "");
+update_element(i_mailto, ["fas", "fa-paper-plane"], "", "", "", "", "");
+a_mailto.appendChild(i_mailto);
+a_mailto.innerHTML += "&#160;bzoulko@gmail.com";
 
-    // Return elements appended togther.
-    return(a);
-}
+// Create TELEPHONE element.
+update_element(a_telephone, null, "Tel: 1-909-835-8703", "Telephone", "", "", "");
+update_element(i_telephone, ["fas", "fa-phone-square-alt"], "", "", "", "", "");
+a_telephone.appendChild(i_telephone);
+a_telephone.innerHTML += "&#160;1 (909) 835-8703";
 
+// Create GITHUB element.
+update_element(a_github, null, "https://github.com/bzoulko", "GitHub", "", "noreferrer", "_blank");
+update_element(i_github, ["fa-brands", "fa-github"], "", "", "", "", "");
+a_github.appendChild(i_github);
+a_github.innerHTML += "&#160;GitHub";
 
-//                     <a href="mailto:bzoulko@gmail.com" title="Email">
-//                          <i class="fas fa-paper-plane"></i>
-//                          &#160;bzoulko@gmail.com
-//                     </a><br>
+// Create LINKED-IN element.
+update_element(a_linkedin, null, "https://www.linkedin.com/in/brian-zoulko-753810240/", "LinkedIn", "", "noreferrer", "_blank");
+update_element(i_linkedin, ["fab", "fa-linkedin"], "", "", "", "", "");
+a_linkedin.appendChild(i_linkedin);
+a_linkedin.innerHTML += "&#160;LinkedIn";
 
-//                     <a href="Tel: 1-909-835-8703" title="Telephone">
-//                          <i class="fas fa-phone-square-alt"></i>
-//                          &#160;1 (909) 835-8703
-//                     </a><br>
+// Append LEFT-SIDE elements together.
+contact_division_icons.appendChild(a_mailto);
+contact_division_icons.innerHTML += "<br>";
+contact_division_icons.appendChild(a_telephone);
+contact_division_icons.innerHTML += "<br>";
+contact_division_icons.appendChild(a_github);
+contact_division_icons.innerHTML += "<br>";
+contact_division_icons.appendChild(a_linkedin);
+contact_division_icons.innerHTML += "<br>";
 
-//                     <a rel="noreferrer" href="https://github.com/bzoulko" target="_blank" title="GitHub">
-//                          <i class="fa-brands fa-github"></i>
-//                          &#160;GitHub
-//                     </a><br>
+contact_division_info_left.appendChild(contact_division_icons);
+contact_division_info_left.appendChild(contact_heading);
+contact_division_row.appendChild(contact_division_info_left);
 
-//                     <a rel="noreferrer" href="https://www.linkedin.com/in/brian-zoulko-753810240/" target="_blank" title="LinkedIn">
-//                          <i class="fab fa-linkedin"></i>&#160;LinkedIn
-//                     </a><br>
+// Append RIGHT-SIDE elements together.
+// contact_division_icons.appendChild(a_mailto);
+// contact_division_icons.appendChild(a_telephone);
+// contact_division_icons.appendChild(a_github);
+// contact_division_icons.appendChild(a_linkedin);
+// contact_division_info_left.appendChild(contact_division_icons);
+// contact_division_info_left.appendChild(contact_heading);
+// contact_division_row.appendChild(contact_division_info_left);
 
+// Append elements together on page.
+contact_division_container.appendChild(contact_division_row);
+contact_section.appendChild(contact_division_container);
+document.body.appendChild(contact_section);
 
-// Append elements together in the body.
-division.appendChild(image);
-section.appendChild(division);
-body.appendChild(section);
 
 
 // <!-- ***************************** -->

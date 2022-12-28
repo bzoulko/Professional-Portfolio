@@ -1,3 +1,75 @@
+var body = document.body;
+
+// Create Elements for Resume Secrtion
+const section               = document.createElement('section');
+const division_container    = document.createElement('div');
+const division_row          = document.createElement('div');
+const division_info_left    = document.createElement('div');
+const division_info_right   = document.createElement('div');
+const division_icons        = document.createElement('div');
+const heading               = document.createElement('h1');
+const image                 = document.createElement('img');
+
+// Build Section Element
+section.id = "contact";
+
+// Build LEFT-SIDE Division Element
+division_container.classList.add("container");
+division_row.classList.add("row");
+division_info_left.classList.add("contact-left");
+division_info_left.classList.add("animate-items");
+division_info_left.classList.add("animate__animated");
+division_info_left.classList.add("animate__fadeInLeft");
+heading.classList.add("sub-title");
+heading.textContent = "Contact Me";
+division_icons.classList.add("social-icons");
+
+function build_mailto() {
+    // Create elements.
+    const a = document.createElement("a");
+    const i = document.createElement("i");
+    
+    // Update href, title and text content.
+    a.href          = "mailto:bzoulko@gmail.com";
+    a.title         = "Email";
+    a.textContent   = "&#160;bzoulko@gmail.com";
+    
+    // Add class names.
+    i.classList.add("fas");
+    i.classList.add("fa-paper-plane");
+    
+    // Append child element.
+    a.appendChild(i);
+
+    // Return elements appended togther.
+    return(a);
+}
+
+
+//                     <a href="mailto:bzoulko@gmail.com" title="Email">
+//                          <i class="fas fa-paper-plane"></i>
+//                          &#160;bzoulko@gmail.com
+//                     </a><br>
+
+//                     <a href="Tel: 1-909-835-8703" title="Telephone">
+//                          <i class="fas fa-phone-square-alt"></i>
+//                          &#160;1 (909) 835-8703
+//                     </a><br>
+
+//                     <a rel="noreferrer" href="https://github.com/bzoulko" target="_blank" title="GitHub">
+//                          <i class="fa-brands fa-github"></i>
+//                          &#160;GitHub
+//                     </a><br>
+
+//                     <a rel="noreferrer" href="https://www.linkedin.com/in/brian-zoulko-753810240/" target="_blank" title="LinkedIn">
+//                          <i class="fab fa-linkedin"></i>&#160;LinkedIn
+//                     </a><br>
+
+
+// Append elements together in the body.
+division.appendChild(image);
+section.appendChild(division);
+body.appendChild(section);
 
 
 // <!-- ***************************** -->

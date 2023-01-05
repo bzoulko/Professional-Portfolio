@@ -61,7 +61,7 @@ function PopUpMenu(option) {
 function page(Id) {
     
     // All valid ID's for the html Page.
-    const Ids = ['home-footer','about','portfolio','contact','resume'];
+    const Ids = ['home-footer','about','work','contact','resume'];
     let navPage = document.getElementById('home');
 
     // console.log("ismobile: ", isMobile());

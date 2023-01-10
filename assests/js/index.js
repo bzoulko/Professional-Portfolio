@@ -74,7 +74,7 @@ function page(Id) {
         let page = document.getElementById(tagId);
         if (Id === tagId) {
             // show the section being viewed.
-            page.style.display = "block";
+            page.style.display = (tagId === "resume" ? "flex" : "block");
 
             // Only hold background size when it's not '0px' to ensure all screen sizes
             // maintain the right size when applied.

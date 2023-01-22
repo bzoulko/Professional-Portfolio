@@ -45,7 +45,7 @@ function PopUpMenu(option) {
         else {
         
             // Only open the side menu bar when screen size requires it.
-            if (width <= 1200) 
+            if (width <= 1160) 
                 animateItem.classList.remove("animate__animated");  
 
         }

@@ -612,7 +612,7 @@ nav .fas {
 /* ********************************** */
 
 /* Tablet sizes and Below */
-@media only screen and (max-width: 1160px) { 
+@media only screen and (max-width: 1200px) { 
 
     .sub-title {
         font-size: 50px;   

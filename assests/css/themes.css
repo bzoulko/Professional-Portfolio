@@ -71,11 +71,11 @@
   bottom: 0;
   z-index: 2;
 
-  -moz-animation: move-background 70s linear infinite;
-  -ms-animation: move-background 70s linear infinite;
-  -o-animation: move-background 70s linear infinite;
-  -webkit-animation: move-background 70s linear infinite;
-  animation: move-background 70s linear infinite;
+  -moz-animation: move-background 50s linear infinite;
+  -ms-animation: move-background 50s linear infinite;
+  -o-animation: move-background 50s linear infinite;
+  -webkit-animation: move-background 50s linear infinite;
+  animation: move-background 50s linear infinite;
 
 }
 
@@ -90,9 +90,21 @@
   bottom: 0;
   z-index: 3;
 
-  -moz-animation: move-background 20s linear infinite;
-  -ms-animation: move-background 20s linear infinite;
-  -o-animation: move-background 20s linear infinite;
-  -webkit-animation: move-background 20s linear infinite;
-  animation: move-background 20s linear infinite;
+  -moz-animation: move-background 120s linear infinite;
+  -ms-animation: move-background 120s linear infinite;
+  -o-animation: move-background 120s linear infinite;
+  -webkit-animation: move-background 120s linear infinite;
+  animation: move-background 120s linear infinite;
+}
+
+.moon {
+  display: inline;
+  height: 90vh;
+  width: 90vh;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png") no-repeat;
+  background-size: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }

@@ -39,7 +39,7 @@
   }
 }
 
-.background-container {
+.theme-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -98,31 +98,9 @@
 }
 
 .moon {
-  display: inline;
-  height: 90vh;
-  width: 90vh;
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png") no-repeat;
-  background-size: auto;
+  height: 8vh;
   position: absolute;
-  top: 0;
-  right: 0;
   z-index: 3;
-}
-
-.hide-moon {
-  width: 10000px;
-  height: 100%;
-  background:  black url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-  background-size: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 3;
-
-  -moz-animation: move-background 50s linear infinite;
-  -ms-animation: move-background 50s linear infinite;
-  -o-animation: move-background 50s linear infinite;
-  -webkit-animation: move-background 50s linear infinite;
-  animation: move-background 50s linear infinite;
+  top: 20px;
+  right: 110px;
 }

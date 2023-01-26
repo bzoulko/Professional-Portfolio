@@ -1,7 +1,7 @@
 // Create Elements for Theme Secrtion
 const theme_section        = document.createElement('section');
 const theme_div_bkgnd      = document.createElement('div');
-const theme_div_moon       = document.createElement('div');
+const theme_img_moon       = document.createElement('img');
 const theme_div_stars      = document.createElement('div');
 const theme_div_twinkling  = document.createElement('div');
 const theme_div_clouds     = document.createElement('div');
@@ -19,16 +19,16 @@ const theme_div_clouds     = document.createElement('div');
 add_attributes(theme_section, ["id", "theme"]);
 
 // Build Division Element
-add_attributes(theme_div_bkgnd, ["class", "background-container"]);
+add_attributes(theme_div_bkgnd, ["class", "theme-container"]);
 
 // Build Theme Division Elements
-add_attributes(theme_div_moon, ["class", "moon"]);
+add_attributes(theme_img_moon, ["class", "moon", "src", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png"]);
 add_attributes(theme_div_stars, ["class", "stars"]);
 add_attributes(theme_div_twinkling, ["class", "twinkling"]);
 add_attributes(theme_div_clouds, ["class", "clouds"]);
 
 // Append elements together in the body.
-//theme_div_bkgnd.appendChild(theme_div_moon);
+theme_div_bkgnd.appendChild(theme_img_moon);
 theme_div_bkgnd.appendChild(theme_div_stars);
 theme_div_bkgnd.appendChild(theme_div_twinkling);
 theme_div_bkgnd.appendChild(theme_div_clouds);

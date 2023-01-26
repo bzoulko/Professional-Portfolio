@@ -137,7 +137,9 @@ body.waiting * {
     filter: drop-shadow(15px 15px 7px var(--darkgrey));
 }
 
-
+.text-blur-behind {
+    backdrop-filter: blur(15px);
+}
 
 /* ********************************** */
 /*          H O M E   P A G E         */
@@ -173,7 +175,7 @@ body.waiting * {
     font-size: 42px;
     font-weight: 600;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;        
 }
 
 .logo-init {

@@ -185,7 +185,7 @@ body.waiting * {
 .logo-dev {
     height: auto;
     width: auto;    
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: 300;
     margin-top: 5px;
     padding-left: 10px;
@@ -679,7 +679,7 @@ nav .fas {
     }
 
     .logo-dev {
-        font-size: 1rem;
+        font-size: .80rem;
     }
     
     .sub-title {
